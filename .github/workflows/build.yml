@@ -79,7 +79,7 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
           script: |
             adb logcat -c || true
-            gradle --no-daemon connectedDebugAndroidTest || (adb logcat -d -s AndroidRuntime:E TestRunner:* | tail -150; exit 1)
+            gradle --no-daemon connectedDebugAndroidTest -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true || (adb logcat -d -s AndroidRuntime:E TestRunner:* | tail -150; exit 1)
             mkdir -p shots && adb pull /sdcard/Android/data/com.lockeddesire.app/files/shots shots/ || true
       - name: Screenshots in Branch ablegen
         if: always()
