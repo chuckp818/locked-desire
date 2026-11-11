@@ -26,7 +26,7 @@ Die APK liegt danach unter `app/build/outputs/apk/debug/app-debug.apk`.
 
 | Bereich | Ort |
 |---|---|
-| Room-Datenbank (28 Entitäten, SQLCipher-verschlüsselt) | `data/Entities.kt`, `data/Daos.kt`, `data/AppDatabase.kt` |
+| Room-Datenbank (31 Entitäten, SQLCipher-verschlüsselt, Schema unter `app/schemas`) | `data/Entities.kt`, `data/Daos.kt`, `data/AppDatabase.kt` |
 | Startdaten: 200 Aufgaben, Fetischbibliothek, Personas, Erfolge | `assets/tasks.txt`, `data/Seed.kt` |
 | Repository mit gesamter Logik | `data/Repo.kt` |
 | Challenge-Engine, Level, Dungeon-Planer, Roulette | `engine/Engines.kt` |
@@ -40,6 +40,26 @@ Die APK liegt danach unter `app/build/outputs/apk/debug/app-debug.apk`.
 - **Hilt** ist durch einen einfachen Service-Locator (`LockedDesireApp.repo`) ersetzt. Gleiche Trennung von ViewModel und Repository, aber weniger Abhängigkeiten und kürzere Build-Zeiten.
 - **Lokales Sprachmodell**: Ein Modell direkt in der APK würde sie um mehrere Gigabyte vergrößern. Stattdessen wird jedes lokale Modell angebunden, das eine OpenAI-kompatible Schnittstelle anbietet (z. B. llama.cpp oder Ollama in Termux unter `http://127.0.0.1:8080/v1`). Ohne Modell übernimmt der vollständig offline arbeitende regelbasierte Dungeon-Master.
 - **APK-Signatur**: Der Signaturschlüssel liegt im Repo (`keystore/`), damit jeder Build updatefähig bleibt. Das Repo muss deshalb privat bleiben.
+
+### Hardcore-Dungeon
+
+Eigener Modus mit 304 Prüfungen in 12 Kategorien (D/s, Humiliation, Chastity, Orgasm Control, Anal Play, Toy Play, CBT, Pussy Play, Nipple Play, Bondage, Impact, Petplay) und sechs Stufen von *Streng* bis *Albtraum*.
+
+| Bereich | Ort |
+|---|---|
+| Aufgabenbibliothek (Generator: `tools/hcgen.py`) | `assets/hardcore_tasks.txt` |
+| Tabellen `HardcoreTask`, `HardcoreRun`, `HardcoreSettings`, Migration 1→2 | `data/HardcoreData.kt`, `data/AppDatabase.kt` |
+| Prüfregeln, Serien, Statistik | `engine/Hardcore.kt` |
+| Repository | `data/HardcoreRepo.kt` |
+| Hardcore-Personas (Eiskalt, Gnadenlos, Sadistisch, Spöttisch, Neutral) | `ai/HardcoreVoice.kt` |
+| Oberfläche und ViewModel | `ui/screens/HardcoreScreens.kt` |
+
+- Zustände: VERFÜGBAR → ANGENOMMEN → AKTIV → BESTANDEN / NICHT BESTANDEN / ABGEBROCHEN.
+- Nur BESTANDEN bringt XP. Nicht bestanden und Abgebrochen: 0 XP, kein Abzug, keine Ersatzstrafe.
+- Höhere Stufen: mehr Teilaufgaben, Kombinationen aus mehreren Kategorien, längere nichtkörperliche Phasen, mehr XP. Körperliche Dauer und Intensität steigen nicht.
+- CBT und Pussy Play sind nur Session-Rahmen nach der eigenen Liste des Nutzers und erscheinen nur mit freiwilliger Anatomie-Angabe, nie abgeleitet aus dem Geschlecht.
+- Echte Fesselung nur mit anwesender Partnerperson.
+- Eingebunden in Dashboard, Chat, Personas, Fetish Universe, Roulette, 24-Stunden-Dungeon, Toy-Galerie, Profil, Statistiken und Benachrichtigungen.
 
 ### Sicherheitsprinzipien
 

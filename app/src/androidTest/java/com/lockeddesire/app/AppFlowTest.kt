@@ -71,4 +71,31 @@ class AppFlowTest {
         Thread.sleep(500)
         shot("91_chat_aufgabe")
     }
+
+    @Test fun hardcoreTrialPassFlow() {
+        passAgeGate()
+        rule.runOnUiThread { rule.activity.pendingRoute.value = "hardcore" }
+        waitFor("DUNGEON BETRETEN")
+        shot("92_hardcore_tor")
+        rule.onNodeWithText("Ich habe die Regeln gelesen", substring = true).performScrollTo().performClick()
+        rule.onNodeWithText("DUNGEON BETRETEN", substring = true).performScrollTo().performClick()
+        waitFor("NEUE PRÜFUNG")
+        Thread.sleep(800)
+        shot("93_hardcore_start")
+        rule.onAllNodesWithText("NEUE PRÜFUNG", substring = true)[0].performScrollTo().performClick()
+        rule.waitUntil(40_000) { has("PRÜFUNG ANNEHMEN") || has("Keine Prüfung passt") }
+        Thread.sleep(500)
+        shot("94_hardcore_pruefung")
+        if (has("PRÜFUNG ANNEHMEN")) {
+            rule.onNodeWithText("PRÜFUNG ANNEHMEN").performScrollTo().performClick()
+            waitFor("PRÜFUNG STARTEN")
+            rule.onNodeWithText("PRÜFUNG STARTEN", substring = true).performScrollTo().performClick()
+            waitFor("NICHT BESTANDEN")
+            shot("95_hardcore_aktiv")
+            rule.onNodeWithText("BESTANDEN").performScrollTo().performClick()
+            waitFor("Erfolg dokumentiert")
+            Thread.sleep(500)
+            shot("96_hardcore_ergebnis")
+        }
+    }
 }

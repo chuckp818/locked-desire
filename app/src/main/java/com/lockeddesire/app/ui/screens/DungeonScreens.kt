@@ -73,6 +73,7 @@ fun TaskRouletteScreen() {
             ProposalFlow(p, comment, "ROULETTE", reroll)
         }
         GhostButton("Eigene Aufgaben verwalten", Modifier.fillMaxWidth()) { nav("taskEditor") }
+        GhostButton("⛓ Hardcore-Prüfung ziehen", Modifier.fillMaxWidth()) { nav("hardcore") }
     }
 }
 
@@ -120,6 +121,7 @@ fun BdsmDungeonScreen() {
             Text("Wasser trinken, etwas Warmes anziehen, zudecken, durchatmen. Sprich über das Erlebte oder schreib es ins Tagebuch.")
             GhostButton("Ins Tagebuch", Modifier.fillMaxWidth()) { nav("journal") }
         }
+        HardcoreSummaryCard()
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             GhostButton("24h-Dungeon", Modifier.weight(1f)) { nav("dungeon24") }
             GhostButton("Grenzen", Modifier.weight(1f)) { nav("limits") }
@@ -190,6 +192,20 @@ private fun Dungeon24Setup() {
     Chips(Seed.CATEGORIES.filter { it.key != "partner" && it.key != "custom" }.map { it.key to it.emoji + " " + it.name } + ("custom" to "✍ Eigene"), cats) {
         cats = if (it in cats) cats - it else cats + it
     }
+    val hcs by remember { vm.db.hardcoreDao().settings() }.collectAsState(null)
+    GothicCard {
+        val h = hcs
+        if (h != null && h.confirmed) {
+            com.lockeddesire.app.ui.components.LabeledSwitch("⛓ Hardcore-Prüfungen einplanen", h.includeIn24h, "Bis Stufe ${h.difficulty} · ${com.lockeddesire.app.engine.Hardcore.DIFFICULTY_NAMES[h.difficulty - 1]}") {
+                vm.run { hc.saveSettings(h.copy(includeIn24h = it)) }
+            }
+            Hint("Hardcore-Aufgaben können bestanden, nicht bestanden oder abgebrochen werden. Nur Bestanden bringt XP.")
+        } else {
+            Text("⛓ Hardcore-Prüfungen")
+            Hint("Öffne zuerst einmal den Hardcore-Dungeon, um sie hier einplanen zu können.")
+            GhostButton("Hardcore-Dungeon öffnen", Modifier.fillMaxWidth()) { nav("hardcore") }
+        }
+    }
     GothicCard {
         Text("Ruhezeiten: ${TimeUtil.clock(notif.quietStart)} – ${TimeUtil.clock(notif.quietEnd)}")
         Text("KI-Begleitung: ${persona?.name ?: "-"}")
@@ -228,7 +244,13 @@ private fun DungeonChallengeCard(ch: DungeonChallenge, nowMs: Long, paused: Bool
                 GhostButton("Überspringen", Modifier.weight(1f)) { vm.run { dungeonChallenge(ch, "SKIPPED") } }
             } else {
                 if (ch.durationMin > 0) CountdownTimer(ch.durationMin * 60)
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                if (ch.categoryKey in com.lockeddesire.app.engine.Hardcore.KEYS) {
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        GoldButton("Bestanden", Modifier.weight(1f)) { vm.run { dungeonChallenge(ch, "DONE") } }
+                        GhostButton("Nicht bestanden", Modifier.weight(1f)) { vm.run { dungeonChallenge(ch, "FAILED") } }
+                    }
+                    GhostButton("Abbrechen", Modifier.fillMaxWidth()) { vm.run { dungeonChallenge(ch, "ABORTED") } }
+                } else Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     GoldButton("Erledigt", Modifier.weight(1f)) { vm.run { dungeonChallenge(ch, "DONE") } }
                     GhostButton("Abbrechen", Modifier.weight(1f)) { vm.run { dungeonChallenge(ch, "ABORTED") } }
                 }

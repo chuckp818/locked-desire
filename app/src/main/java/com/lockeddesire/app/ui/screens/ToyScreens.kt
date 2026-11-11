@@ -138,7 +138,8 @@ fun ToyDetailScreen(id: Long) {
         LdField(t.measures, "Maße (optional)") { t = t.copy(measures = it.take(60)) }
         LdField(t.note, "Persönliche Notizen", singleLine = false) { t = t.copy(note = it.take(500)) }
         LabeledSwitch("Favorit", t.favorite) { t = t.copy(favorite = it) }
-        LabeledSwitch("Für Roulette freigeben", t.rouletteEnabled) { t = t.copy(rouletteEnabled = it) }
+        LabeledSwitch("Für Roulette und Hardcore-Dungeon freigeben", t.rouletteEnabled) { t = t.copy(rouletteEnabled = it) }
+        Hint("Freigegebene Toys kann der Hardcore-Dungeon passend zur Kategorie in Prüfungen einsetzen. Bestandene Prüfungen erscheinen in der Nutzung.")
         if (t.lastUsedAt > 0) Hint("Zuletzt verwendet: ${TimeUtil.dateTime(t.lastUsedAt)}")
         GoldButton("Speichern", Modifier.fillMaxWidth(), enabled = t.name.isNotBlank()) {
             val toSave = t

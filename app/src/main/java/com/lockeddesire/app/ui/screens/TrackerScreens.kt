@@ -216,6 +216,7 @@ fun StatsScreen() {
             StatTile(done.sumOf { it.xp }.toString(), "XP", Modifier.weight(1f), "⭐")
             StatTile(entries.filter { it.createdAt >= since }.sumOf { it.delta.coerceAtLeast(0) }.toString(), "Einträge", Modifier.weight(1f), "📈")
         }
+        HardcoreStatsSection()
         SectionTitle("Aufgaben – letzte 7 Tage")
         GothicCard { BarChart(lastDays(7) { a, b -> completions.count { it.status == "DONE" && it.createdAt in a until b } }) }
         SectionTitle("Nach Kategorie")

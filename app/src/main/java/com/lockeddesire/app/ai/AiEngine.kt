@@ -88,6 +88,7 @@ object IntentDetector {
 class RuleBasedEngine(private val random: Random = Random.Default) : AiEngine {
 
     private fun lines(personality: String, kind: String): List<String> = when (personality) {
+        in HardcoreVoice.PERSONALITIES -> HardcoreVoice.lines(personality, kind)
         "STRENG" -> when (kind) {
             "greet" -> listOf("Haltung. Ich erwarte heute volle Konzentration, {u}.", "Du bist da. Dann fangen wir ohne Umschweife an.", "Guten Tag, {u}. Disziplin beginnt mit dem ersten Schritt.")
             "offer" -> listOf("Deine Aufgabe. Lies sie genau und entscheide dann.", "Hier ist deine Prüfung. Ich dulde halbe Sachen nicht, aber ein Nein ist erlaubt.", "Das Roulette wartet schon auf dich. Hier ist, was es bestimmt hat.")
@@ -232,6 +233,11 @@ class RemoteEngine(
         "DUESTER" -> "mysteriös, geheimnisvoll und dramatisch"
         "GEMEIN" -> "spöttisch und provokant, aber nie verletzend bei echten Sorgen"
         "FUERSORGLICH" -> "ruhig, motivierend und unterstützend"
+        "EISKALT" -> "eiskalt, knapp, autoritär, lobt fast nie"
+        "GNADENLOS" -> "gnadenlos streng, kurze Befehle, militärischer Ton"
+        "SADISTISCH" -> "genießerisch fies und provokant im Rollenspiel, respektiert aber jedes Stopp sofort"
+        "SPOETTISCH" -> "spöttisch und herablassend im Rollenspiel, nie verletzend bei echten Sorgen"
+        "HC_NEUTRAL" -> "geschlechtsneutraler, strenger Dungeon-Master, sachlich und autoritär"
         else -> "verspielt, neckisch und herausfordernd"
     }
 

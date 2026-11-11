@@ -71,7 +71,7 @@ import com.lockeddesire.app.ui.theme.LocalAccent
 import kotlinx.coroutines.flow.flowOf
 
 private val AREAS = listOf(
-    Triple("🎲", "Aufgabenroulette", "taskRoulette"), Triple("💬", "KI-Chat", "chat"), Triple("🏰", "24h-Dungeon", "dungeon24"),
+    Triple("⛓", "Hardcore-Dungeon", "hardcore"), Triple("🎲", "Aufgabenroulette", "taskRoulette"), Triple("💬", "KI-Chat", "chat"), Triple("🏰", "24h-Dungeon", "dungeon24"),
     Triple("⛓", "BDSM-Dungeon", "bdsmDungeon"), Triple("🔒", "Keuschheit", "chastity"), Triple("🐾", "Petplay", "petDungeon"),
     Triple("📖", "Fetish Universe", "fetishUniverse"), Triple("🎯", "Fetisch-Roulette", "fetishRoulette"), Triple("🚫", "Grenzen", "limits"),
     Triple("🎁", "Toy-Galerie", "toys"), Triple("🎰", "Toy-Roulette", "toyRoulette"), Triple("⏳", "Zeitgenerator", "timeGen"),
@@ -162,6 +162,7 @@ fun DashboardScreen() {
                 }
             }
         }
+        HardcoreSummaryCard(compact = true)
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             StatTile(completions.count { it.status == "DONE" }.toString(), "Aufgaben erledigt", Modifier.weight(1f), "✅")
             StatTile((counters.firstOrNull { it.key == "records" }?.value ?: 0).toString(), "Rekorde", Modifier.weight(1f), "🏅")
@@ -234,6 +235,16 @@ fun ProfileScreen() {
         LdField(p.limitsText, "Persönliche Grenzen (Begriffe, durch Komma getrennt)", singleLine = false) { p = p.copy(limitsText = it.take(600)) }
         Hint("Aufgaben, die einen dieser Begriffe enthalten, werden von der Challenge-Engine blockiert. Mehr im Grenzen-Manager.")
         LdField(p.goals, "Persönliche Ziele", singleLine = false) { p = p.copy(goals = it.take(600)) }
+        SectionTitle("Anatomie (freiwillig)")
+        val hcs by remember { vm.db.hardcoreDao().settings() }.collectAsState(null)
+        val anat = hcs?.anatomy.orEmpty().split(",").filter { it.isNotBlank() }.toSet()
+        Chips(com.lockeddesire.app.engine.Hardcore.ANATOMY, anat) { k ->
+            val cur = hcs ?: com.lockeddesire.app.data.HardcoreSettings()
+            val next = if (k in anat) anat - k else anat + k
+            vm.run { hc.saveSettings(cur.copy(anatomy = next.joinToString(","))) }
+        }
+        Hint("Nur für die Auswahl von Hardcore-Aufgaben. Wird nie aus Geschlecht oder Pronomen abgeleitet und nie an eine Cloud-KI gesendet.")
+        HardcoreSummaryCard()
         GoldButton("Profil speichern", Modifier.fillMaxWidth()) { vm.saveProfile(p); vm.repo.emit("INFO", "Profil gespeichert") }
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             GhostButton("Statistiken", Modifier.weight(1f)) { nav("stats") }
@@ -370,9 +381,10 @@ fun ChatScreen(activity: MainActivity) {
             items(messages, key = { it.id }) { m -> MessageBubble(m, persona) }
             if (busy) item { Text("${persona?.name ?: "KI"} schreibt …", color = LD.Dim, style = MaterialTheme.typography.bodySmall) }
         }
-        Chips(listOf("task" to "Neue Challenge", "progress" to "Fortschritt", "pause" to "Pause", "limits" to "Grenzen ändern"), emptySet()) {
+        Chips(listOf("task" to "Neue Challenge", "hc" to "⛓ Hardcore-Prüfung", "progress" to "Fortschritt", "pause" to "Pause", "limits" to "Grenzen ändern"), emptySet()) {
             when (it) {
                 "task" -> send("Ich bin bereit für eine neue Challenge.")
+                "hc" -> send("Gib mir eine Hardcore-Prüfung.")
                 "progress" -> send("Wie ist mein Fortschritt?")
                 "pause" -> send("Ich brauche eine Pause.")
                 "limits" -> nav("limits")
@@ -396,6 +408,7 @@ fun ChatScreen(activity: MainActivity) {
 @Composable
 private fun MessageBubble(m: AiMessage, persona: AiPersona?) {
     val vm = LocalVm.current
+    val nav = LocalNav.current
     val accent = LocalAccent.current
     Row(Modifier.fillMaxWidth(), horizontalArrangement = if (m.fromUser) Arrangement.End else Arrangement.Start) {
         Column(
@@ -435,6 +448,7 @@ private fun MessageBubble(m: AiMessage, persona: AiPersona?) {
                             }
                             Hint("Abbrechen ist jederzeit erlaubt und wird nicht bestraft.")
                         }
+                        "HC" -> GoldButton("⛓ Zur Prüfung", Modifier.fillMaxWidth()) { nav("hardcore") }
                         else -> Badge(statusText(m.offerState), LD.Dim)
                     }
                 }

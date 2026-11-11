@@ -131,6 +131,15 @@ class TickWorker(context: Context, params: WorkerParameters) : CoroutineWorker(c
                     }
                 }
             }
+            // Hardcore-Dungeon: spontane Prüfungen, Häufigkeit steigt mit der Stufe
+            if (!quiet) {
+                val hs = repo.hc.settings()
+                if (hs.confirmed && hs.notify) {
+                    val awakeLeft = if (n.quietStart > minute) n.quietStart - minute else (1440 - minute + n.quietStart) % 1440
+                    val chance = (com.lockeddesire.app.engine.Hardcore.spontaneousPerDay(hs.difficulty).toDouble() / (awakeLeft / 15).coerceAtLeast(1)).coerceIn(0.02, 1.0)
+                    if (Random.nextDouble() < chance) repo.hc.spontaneous()?.let { Notifier.post(ctx, n, "CHALLENGE", it, "hardcore") }
+                }
+            }
             Result.success()
         } catch (e: Exception) {
             Result.success()

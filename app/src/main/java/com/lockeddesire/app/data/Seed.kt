@@ -67,6 +67,8 @@ object Seed {
         f("bunnyplay", G_PE, "Bunnyplay"), f("foxplay", G_PE, "Foxplay"),
         f("feet", G_OT, "Foot Fetish"), f("sensory", G_OT, "Sensory Play"), f("wax", G_OT, "Wax Play"),
         f("temperature", G_OT, "Temperature Play"), f("medical", G_OT, "Medical Roleplay"), f("latex", G_OT, "Latex"),
+        f("humiliation", G_DS, "Humiliation"), f("analplay", G_OT, "Anal Play", true), f("toyplay", G_OT, "Toy Play"),
+        f("pussyplay", G_IM, "Pussy Play", true),
         f("leather", G_OT, "Leder"), f("fetishwear", G_OT, "Fetischkleidung"), f("uniform", G_OT, "Uniform-Fetische"),
         f("cosplay", G_OT, "Cosplay"), f("exhib", G_OT, "Exhibitionistische Fantasien", true),
         f("voyeur", G_OT, "Voyeuristische Fantasien", true)
@@ -95,6 +97,11 @@ object Seed {
         AiPersona(name = "Nyx", avatar = "🦇", type = "NEUTRAL", pronouns = "keine", salutation = "Hoheit", personality = "DUESTER", strictness = 5, voicePitch = 0.8f, voiceRate = 0.9f, builtIn = true, greeting = "Die Schatten haben dich erwartet. Tritt näher."),
         AiPersona(name = "Vex", avatar = "😈", type = "FEMALE", pronouns = "sie/ihr", salutation = "Miss", personality = "FRECH", strictness = 4, voicePitch = 1.2f, voiceRate = 1.1f, builtIn = true, greeting = "Na, traust du dich heute an eine neue Herausforderung?"),
         AiPersona(name = "Sir Malice", avatar = "🎩", type = "MALE", pronouns = "er/ihm", salutation = "Sir", personality = "GEMEIN", strictness = 8, voicePitch = 0.8f, builtIn = true, greeting = "Ach, du schon wieder. Mal sehen, ob du diesmal länger durchhältst als mein Kaffee warm bleibt."),
+        AiPersona(name = "Lady Frost", avatar = "❄", type = "FEMALE", pronouns = "sie/ihr", salutation = "Herrin", personality = "EISKALT", strictness = 9, voicePitch = 0.85f, voiceRate = 0.9f, builtIn = true, greeting = "Still. Du sprichst, wenn ich es erlaube."),
+        AiPersona(name = "Lord Draven", avatar = "⚔", type = "MALE", pronouns = "er/ihm", salutation = "Herr", personality = "GNADENLOS", strictness = 10, voicePitch = 0.65f, builtIn = true, greeting = "Auf deinen Platz. Gnade gibt es hier nicht."),
+        AiPersona(name = "Velvet Thorn", avatar = "🥀", type = "CUSTOM", pronouns = "sie/ihr", salutation = "Mistress", personality = "SADISTISCH", strictness = 9, voicePitch = 1.0f, voiceRate = 0.95f, builtIn = true, greeting = "Mein liebstes Spielzeug. Bereit zu leiden – innerhalb deiner Grenzen?"),
+        AiPersona(name = "Scorn", avatar = "🃏", type = "NEUTRAL", pronouns = "keine", salutation = "Hoheit", personality = "SPOETTISCH", strictness = 8, voicePitch = 1.05f, voiceRate = 1.05f, builtIn = true, greeting = "Oh, du traust dich wieder her? Wie putzig."),
+        AiPersona(name = "Warden", avatar = "🗝", type = "NEUTRAL", pronouns = "keine", salutation = "Warden", personality = "HC_NEUTRAL", strictness = 9, voicePitch = 0.75f, voiceRate = 0.9f, builtIn = true, greeting = "Der Dungeon ist geöffnet. Melde dich zur Prüfung."),
         AiPersona(name = "Sera", avatar = "🕊", type = "NEUTRAL", pronouns = "keine", salutation = "Sera", personality = "FUERSORGLICH", strictness = 2, voicePitch = 1.1f, voiceRate = 0.95f, builtIn = true, greeting = "Schön, dass du da bist. Wie fühlst du dich heute?")
     )
 
@@ -123,6 +130,10 @@ object Seed {
         Achievement(key = "partner_first", name = "Zu zweit", description = "Erste Partner-Challenge", emoji = "💞", xpReward = 40),
         Achievement(key = "custom_task", name = "Eigene Regeln", description = "Erste eigene Aufgabe erstellt", emoji = "✍", xpReward = 20),
         Achievement(key = "fetish_profile", name = "Selbstkenntnis", description = "5 Vorlieben eingeordnet", emoji = "📖", xpReward = 30),
+        Achievement(key = "hc_first", name = "Durchs Tor", description = "Erste Hardcore-Prüfung bestanden", emoji = "⛓", xpReward = 40),
+        Achievement(key = "hc_ten", name = "Gezeichnet", description = "10 Hardcore-Prüfungen bestanden", emoji = "🔥", xpReward = 120),
+        Achievement(key = "hc_series", name = "Serienprüfling", description = "Eine Prüfungsserie mit 3 Teilaufgaben bestanden", emoji = "🔗", xpReward = 80),
+        Achievement(key = "hc_nightmare", name = "Albtraum überlebt", description = "Eine Prüfung der Stufe Albtraum bestanden", emoji = "💀", xpReward = 200),
         Achievement(key = "level_5", name = "Herausforderer", description = "Level 5 erreicht", emoji = "⭐", xpReward = 0),
         Achievement(key = "level_10", name = "Diszipliniert", description = "Level 10 erreicht", emoji = "🌟", xpReward = 0),
         Achievement(key = "level_20", name = "Dungeon-Kenner", description = "Level 20 erreicht", emoji = "💫", xpReward = 0),
@@ -137,6 +148,8 @@ object Seed {
     val PET_ROLES = listOf("Puppy" to "🐶", "Kitten" to "🐱", "Pony" to "🐴", "Bunny" to "🐰", "Fox" to "🦊", "Eigenes Pet" to "🐾")
     val PERSONALITIES = listOf(
         "FRECH" to "Frech", "STRENG" to "Streng", "DOMINANT" to "Dominant",
-        "DUESTER" to "Düster", "GEMEIN" to "Gemein", "FUERSORGLICH" to "Fürsorglich"
+        "DUESTER" to "Düster", "GEMEIN" to "Gemein", "FUERSORGLICH" to "Fürsorglich",
+        "EISKALT" to "Eiskalt (Hardcore)", "GNADENLOS" to "Gnadenlos (Hardcore)", "SADISTISCH" to "Sadistisch (Hardcore)",
+        "SPOETTISCH" to "Spöttisch (Hardcore)", "HC_NEUTRAL" to "Dungeon-Master (Hardcore)"
     )
 }

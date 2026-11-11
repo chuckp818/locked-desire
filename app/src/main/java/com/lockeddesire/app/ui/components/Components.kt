@@ -124,12 +124,13 @@ object Fx {
 }
 
 @Composable
-fun GothicBackground(content: @Composable BoxScope.() -> Unit) {
+fun GothicBackground(hardcore: Boolean = false, content: @Composable BoxScope.() -> Unit) {
     val effects = LocalEffects.current
     val accent = LocalAccent.current
     Box(
         Modifier.fillMaxSize().background(
-            Brush.verticalGradient(listOf(LD.Black, LD.Violet.copy(alpha = 0.55f), LD.Black, LD.Bordeaux.copy(alpha = 0.45f)))
+            if (hardcore) Brush.verticalGradient(listOf(Color.Black, LD.Black, LD.DarkRed.copy(alpha = 0.35f), Color.Black))
+            else Brush.verticalGradient(listOf(LD.Black, LD.Violet.copy(alpha = 0.55f), LD.Black, LD.Bordeaux.copy(alpha = 0.45f)))
         )
     ) {
         if (effects) {
@@ -164,12 +165,13 @@ fun Screen(
     onBack: (() -> Unit)? = null,
     scroll: Boolean = true,
     safeword: Boolean = true,
+    hardcore: Boolean = false,
     actions: @Composable RowScope.() -> Unit = {},
     content: @Composable ColumnScope.() -> Unit
 ) {
     val vm = LocalVm.current
     var ask by remember { mutableStateOf(false) }
-    GothicBackground {
+    GothicBackground(hardcore) {
         Scaffold(
             containerColor = Color.Transparent,
             contentColor = LD.Grey,
@@ -274,7 +276,7 @@ fun XpBar(progress: Float, label: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun LabeledSwitch(label: String, checked: Boolean, sub: String = "", enabled: Boolean = true, onChange: (Boolean) -> Unit) {
-    Row(Modifier.fillMaxWidth().heightIn(min = 52.dp), verticalAlignment = Alignment.CenterVertically) {
+    Row(Modifier.fillMaxWidth().heightIn(min = 52.dp).then(if (enabled) Modifier.clickable { onChange(!checked) } else Modifier), verticalAlignment = Alignment.CenterVertically) {
         Column(Modifier.weight(1f).padding(end = 12.dp)) {
             Text(label, style = MaterialTheme.typography.bodyLarge)
             if (sub.isNotBlank()) Text(sub, style = MaterialTheme.typography.bodySmall, color = LD.Dim)

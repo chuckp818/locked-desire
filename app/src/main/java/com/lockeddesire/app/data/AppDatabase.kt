@@ -5,6 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.lockeddesire.app.security.Crypto
 import net.zetetic.database.sqlcipher.SupportOpenHelperFactory
 
@@ -16,10 +17,11 @@ import net.zetetic.database.sqlcipher.SupportOpenHelperFactory
         ChastitySession::class, FetishCategory::class, UserFetishPreference::class, PetProfile::class,
         PetSession::class, Toy::class, ToySession::class, PersonalCounter::class, CounterEntry::class,
         FitnessActivity::class, Achievement::class, UserAchievement::class, PartnerProfile::class,
-        NotificationSettings::class, SessionEntry::class
+        NotificationSettings::class, SessionEntry::class,
+        HardcoreTask::class, HardcoreRun::class, HardcoreSettings::class
     ],
-    version = 1,
-    exportSchema = false
+    version = 2,
+    exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun profileDao(): ProfileDao
@@ -31,6 +33,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun petDao(): PetDao
     abstract fun toyDao(): ToyDao
     abstract fun statsDao(): StatsDao
+    abstract fun hardcoreDao(): HardcoreDao
 
     companion object {
         const val NAME = "lockeddesire.db"
@@ -39,7 +42,19 @@ abstract class AppDatabase : RoomDatabase() {
          * Migrationen: Bei jeder Schemaänderung die Version erhöhen und hier eine
          * Migration(alt, neu) ergänzen. So bleiben Nutzerdaten bei Updates erhalten.
          */
-        val MIGRATIONS: Array<Migration> = arrayOf()
+        val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("CREATE TABLE IF NOT EXISTS `HardcoreTask` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `code` TEXT NOT NULL, `title` TEXT NOT NULL, `categoryKey` TEXT NOT NULL, `description` TEXT NOT NULL, `difficulty` INTEGER NOT NULL, `durationMin` INTEGER NOT NULL, `xp` INTEGER NOT NULL, `physical` INTEGER NOT NULL, `jointLoad` INTEGER NOT NULL, `partnerRequired` INTEGER NOT NULL, `toyCategory` TEXT NOT NULL, `anatomy` TEXT NOT NULL, `roles` TEXT NOT NULL, `requirements` TEXT NOT NULL, `safetyClass` TEXT NOT NULL, `status` TEXT NOT NULL, `custom` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL)")
+                db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_HardcoreTask_code` ON `HardcoreTask` (`code`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_HardcoreTask_categoryKey` ON `HardcoreTask` (`categoryKey`)")
+                db.execSQL("CREATE TABLE IF NOT EXISTS `HardcoreRun` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `taskIds` TEXT NOT NULL, `code` TEXT NOT NULL, `title` TEXT NOT NULL, `description` TEXT NOT NULL, `categoryKey` TEXT NOT NULL, `categories` TEXT NOT NULL, `difficulty` INTEGER NOT NULL, `xp` INTEGER NOT NULL, `durationMin` INTEGER NOT NULL, `stepsTotal` INTEGER NOT NULL, `stepsDone` INTEGER NOT NULL, `toyId` INTEGER NOT NULL, `toyName` TEXT NOT NULL, `partner` INTEGER NOT NULL, `personaId` INTEGER NOT NULL, `source` TEXT NOT NULL, `status` TEXT NOT NULL, `verdict` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, `acceptedAt` INTEGER NOT NULL, `startedAt` INTEGER NOT NULL, `endedAt` INTEGER NOT NULL)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_HardcoreRun_status` ON `HardcoreRun` (`status`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_HardcoreRun_createdAt` ON `HardcoreRun` (`createdAt`)")
+                db.execSQL("CREATE TABLE IF NOT EXISTS `HardcoreSettings` (`id` INTEGER NOT NULL, `confirmed` INTEGER NOT NULL, `difficulty` INTEGER NOT NULL, `categories` TEXT NOT NULL, `personaId` INTEGER NOT NULL, `anatomy` TEXT NOT NULL, `includeIn24h` INTEGER NOT NULL, `notify` INTEGER NOT NULL, `chains` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))")
+            }
+        }
+
+        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2)
 
         @Volatile private var instance: AppDatabase? = null
 

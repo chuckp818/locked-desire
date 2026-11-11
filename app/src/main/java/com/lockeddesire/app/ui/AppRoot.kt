@@ -58,7 +58,7 @@ import kotlinx.coroutines.launch
 val ROUTES = setOf(
     "dashboard", "profile", "personas", "chat", "taskRoulette", "bdsmDungeon", "dungeon24", "chastity", "petDungeon",
     "petProfile", "petRoulette", "fetishUniverse", "fetishProfile", "fetishRoulette", "limits", "toys", "toyRoulette",
-    "timeGen", "journal", "fitness", "stats", "partner", "levels", "taskEditor", "notifSettings", "privacy", "settings"
+    "timeGen", "journal", "fitness", "stats", "partner", "levels", "taskEditor", "notifSettings", "privacy", "settings", "hardcore"
 )
 
 @Composable
@@ -246,6 +246,7 @@ private fun MainNav(activity: MainActivity) {
             composable("notifSettings") { NotificationSettingsScreen(activity) }
             composable("privacy") { PrivacyScreen(activity) }
             composable("settings") { SettingsScreen() }
+            composable("hardcore") { HardcoreScreen() }
         }
     }
 }

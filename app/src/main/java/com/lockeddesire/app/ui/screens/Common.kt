@@ -22,10 +22,12 @@ fun rememberNow(intervalMs: Long = 1000): State<Long> = produceState(System.curr
     while (true) { delay(intervalMs); value = System.currentTimeMillis() }
 }
 
-fun categoryName(key: String): String = Seed.CATEGORIES.firstOrNull { it.key == key }?.let { it.emoji + " " + it.name } ?: key
+fun categoryName(key: String): String = Seed.CATEGORIES.firstOrNull { it.key == key }?.let { it.emoji + " " + it.name }
+    ?: com.lockeddesire.app.engine.Hardcore.category(key)?.let { it.emoji + " " + it.name }
+    ?: if (key == "hardcore") "⛓ Hardcore" else key
 
 fun statusText(status: String): String = when (status) {
-    "DONE" -> "Erledigt"; "SKIPPED" -> "Übersprungen"; "DECLINED" -> "Abgelehnt"; "ABORTED" -> "Abgebrochen"
+    "DONE" -> "Erledigt"; "FAILED" -> "Nicht bestanden"; "PASSED" -> "Bestanden"; "AVAILABLE" -> "Verfügbar"; "ACTIVE" -> "Aktiv"; "SKIPPED" -> "Übersprungen"; "DECLINED" -> "Abgelehnt"; "ABORTED" -> "Abgebrochen"
     "PENDING" -> "Geplant"; "OPEN" -> "Offen"; "ACCEPTED" -> "Angenommen"; "EXPIRED" -> "Verfallen"
     else -> status
 }

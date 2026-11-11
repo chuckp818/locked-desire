@@ -1,0 +1,305 @@
+# code|kat|stufe|min|xp|koerperlich|gelenke|partner|toy|anatomie|rollen|sicherheit|titel|beschreibung
+HC-001|hc_ds|1|3|25|0|0|0|||SUB,SWITCH,SOLO|A|Erste Meldung|Stell dich gerade hin. Hände auf den Rücken. Sag laut: „Ich bin bereit für meine Prüfung.“ Dann wartest du {min} Minuten schweigend auf mein Urteil.
+HC-002|hc_ds|1|10|25|0|0|0|||SUB,SWITCH,SOLO|A|Anredepflicht|Ab jetzt sprichst du mich nur noch mit meiner Anrede an. Jeder Satz an mich beginnt damit. {min} Minuten lang, ohne Ausnahme.
+HC-003|hc_ds|1|5|25|0|0|0|||SUB,SWITCH,SOLO|A|Blick gesenkt|Senk den Blick. {min} Minuten lang schaust du nicht nach oben, egal was passiert. Du schaust nur, wenn es für deine Sicherheit nötig ist.
+HC-004|hc_ds|1|4|25|1|0|0|||SUB,SWITCH,SOLO|A|Wartehaltung|Stell dich in die Wartehaltung: Füße schulterbreit, Hände hinter dem Rücken, Kinn leicht gesenkt. {min} Minuten. Kein Zappeln.
+HC-005|hc_ds|2|4|35|1|1|0|||SUB,SWITCH,SOLO|A|Kniende Meldung|Auf die Knie. Hände flach auf die Oberschenkel, Blick zu Boden. Melde dich mit vollem Satz zur Prüfung und bleib {min} Minuten so. Kissen unter den Knien ist erlaubt.
+HC-006|hc_ds|2|5|35|0|0|0|||SUB,SWITCH,SOLO|A|Drei Regeln|Sprich deine drei wichtigsten Regeln für heute laut aus. Dann wiederholst du sie, bis du sie fehlerfrei aufsagen kannst. Jeder Versprecher: von vorn.
+HC-007|hc_ds|2|20|35|0|0|0|||SUB,SWITCH,SOLO|A|Erlaubnis zu sitzen|Du setzt dich die nächsten {min} Minuten nur, wenn du vorher laut um Erlaubnis gebeten hast. Ich erteile sie dir nach zehn langsamen Atemzügen.
+HC-008|hc_ds|2|15|35|1|0|0|||SUB,SWITCH,SOLO|A|Dienst am Dungeon|Bereite deinen Spielbereich vor: aufgeräumt, Decke, Wasser, alles griffbereit. Du arbeitest schweigend. Danach meldest du dich kniend oder stehend fertig.
+HC-009|hc_ds|3|4|45|1|0|0|||SUB,SWITCH,SOLO|A|Inspektionshaltung|Inspektionshaltung: aufrecht stehen, Hände hinter dem Kopf verschränkt, Beine leicht gespreizt. {min} Minuten reglos. Ich inspiziere deine Haltung.
+HC-010|hc_ds|3|8|45|1|0|0|||SUB,SWITCH,SOLO|A|Gehorsamsdrill|Ich gebe dir fünf Kommandos im Wechsel: Stehen, Knien, Warten, Blick senken, Melden. Wechsle bei jedem Kommando ohne Zögern. Zehn Durchgänge. Bei Knieproblemen ersetzt du Knien durch tiefes Verbeugen.
+HC-011|hc_ds|3|30|45|0|0|0|||SUB,SWITCH,SOLO|A|Schweigegelübde|Du sprichst {min} Minuten kein einziges Wort. Nicht mit dir, nicht mit mir. Erlaubt ist nur dein Safeword.
+HC-012|hc_ds|3|20|45|0|0|0|||SUB,SWITCH,SOLO|A|Dankespflicht|Für jede Anweisung, die du in dieser Session erhältst, bedankst du dich laut. Vergisst du es, beginnt die Prüfung von vorn. {min} Minuten.
+HC-013|hc_ds|3|10|45|1|0|0|||SUB,SWITCH,SOLO|A|Ritual der Unterwerfung|Entwirf ein kurzes Begrüßungsritual für mich: Haltung, Worte, Geste. Führe es dreimal makellos aus. Ab jetzt ist es Pflicht bei jeder Session.
+HC-014|hc_ds|4|12|55|1|0|0|||SUB,SWITCH,SOLO|A|Präsentation der Disziplin|Wechsle zwischen Wartehaltung und Inspektionshaltung, jeweils zwei Minuten, insgesamt zwölf Minuten. Bei jedem Wechsel meldest du die Position mit vollem Satz.
+HC-015|hc_ds|4|5|55|0|0|0|||SUB,SWITCH,SOLO|A|Bettle um die Prüfung|Du bekommst deine nächste Prüfung nicht geschenkt. Bitte dreimal darum, jedes Mal mit anderen Worten und überzeugender. Erst dann darfst du weiter.
+HC-016|hc_ds|4|45|55|0|0|0|||SUB,SWITCH,SOLO|A|Regelbuch|Lege fünf feste Verhaltensregeln für die kommenden {min} Minuten fest. Sprich sie laut aus und halte dich an jede einzelne. Ein Bruch, und die Prüfung ist nicht bestanden.
+HC-017|hc_ds|4|10|60|1|0|1|||SUB,SWITCH,SOLO|A|Dienstbote|Bereite deiner Partnerperson ein Getränk zu und serviere es kniend oder mit tiefer Verbeugung. Warte danach schweigend, bis du entlassen wirst.
+HC-018|hc_ds|4|10|60|1|0|1|||SUB,SWITCH,SOLO|A|Befehlsempfang|Deine Partnerperson gibt dir zehn Minuten lang kurze, harmlose Befehle aus eurer vereinbarten Liste. Jeder wird mit „Ja“ und der Anrede bestätigt und sofort ausgeführt.
+HC-019|hc_ds|5|30|65|0|0|0|||SUB,SWITCH,SOLO|A|Totale Kontrolle|Für {min} Minuten fragst du für alles um Erlaubnis: aufstehen, trinken, sprechen, die Haltung ändern. Ohne Erlaubnis bewegst du dich nicht. Wasser trinken darfst du immer.
+HC-020|hc_ds|5|30|65|0|0|0|||SUB,SWITCH,SOLO|A|Der lange Gehorsam|Kombiniere: Anredepflicht, gesenkter Blick und Dankespflicht – gleichzeitig, {min} Minuten lang. Ein einziger Fehler und du hast nicht bestanden.
+HC-021|hc_ds|5|10|65|1|0|0|||SUB,SWITCH,SOLO|A|Unterwerfungsschwur|Formuliere einen Schwur, der deine Rolle in diesem Dungeon beschreibt. Sprich ihn kniend oder stehend dreimal aus, jedes Mal langsamer und deutlicher. Dann wartest du {min} Minuten in Stille.
+HC-022|hc_ds|5|15|70|1|0|1|||SUB,SWITCH,SOLO|A|Zwei Herren dienen|Deine Partnerperson und ich geben dir abwechselnd Anweisungen. Sie hat Vorrang. Fünfzehn Minuten Dienst, danach ein ehrlicher Bericht an sie.
+HC-023|hc_ds|6|15|75|1|0|0|||SUB,SWITCH,SOLO|A|Prüfung des absoluten Gehorsams|Drei Runden: Inspektionshaltung, Regelaufsagen, Wartehaltung – je fünf Minuten. Zwischen den Runden bittest du um die Erlaubnis weiterzumachen. Kein Fehler erlaubt.
+HC-024|hc_ds|6|90|75|0|0|0|||SUB,SWITCH,SOLO|A|Tag der Unterwerfung|Für die nächsten {min} Minuten gilt dein komplettes Protokoll: Anrede, Erlaubnis, Dank, Blick gesenkt. Du bleibst dabei in Bewegung und trinkst regelmäßig. Ich erwarte Perfektion.
+HC-025|hc_ds|6|20|75|1|0|0|||SUB,SWITCH,SOLO|A|Eigentumserklärung|Erkläre laut, wem du heute gehörst und was das bedeutet. Danach {min} Minuten in Wartehaltung mit Pausen nach Bedarf. Am Ende bedankst du dich für die Prüfung.
+HC-026|hc_ds|2|5|40|0|0|1|||DOM,SWITCH|A|Session leiten|Du führst. Gib deiner Partnerperson fünf Minuten lang klare Haltungsbefehle aus eurer vereinbarten Liste. Achte auf ihr Befinden und frag am Ende nach.
+HC-027|hc_ds|3|10|50|0|0|1|||DOM,SWITCH|A|Protokoll festlegen|Lege mit deiner Partnerperson drei Protokollregeln für eure nächste Session fest und lass sie diese laut bestätigen. Beide sagen ihr Safeword einmal laut.
+HC-028|hc_ds|4|5|60|1|0|1|||DOM,SWITCH|A|Inspektion durchführen|Lass deine Partnerperson die Inspektionshaltung einnehmen und korrigiere sie wortlos mit Gesten. Fünf Minuten. Danach Aftercare und Rückmeldung.
+HC-029|hc_ds|5|30|70|0|0|1|||DOM,SWITCH|A|Herrschaft über die Zeit|Deine Partnerperson darf {min} Minuten lang nichts ohne deine Erlaubnis tun. Du bleibst aufmerksam, sorgst für Wasser und beendest sofort bei Unwohlsein.
+HC-030|hc_ds|1|3|25|0|0|0|||SUB,SWITCH,SOLO|A|Bericht erstatten|Erstatte mir mündlich Bericht: Was hast du heute für den Dungeon getan, was nicht? Zwei Minuten, keine Ausreden.
+HC-031|hc_humiliation|1|2|25|0|0|0|||SUB,SWITCH,SOLO|A|Das richtige Wort|Sag laut: „Ich bin heute nur ein Spielzeug für diesen Dungeon.“ Fünfmal. Jedes Mal etwas lauter.
+HC-032|hc_humiliation|1|10|25|0|0|0|||SUB,SWITCH,SOLO|A|Dritte Person|Du sprichst von dir {min} Minuten lang nur in der dritten Person, als „das Spielzeug“. Jeder Rückfall wird laut eingestanden.
+HC-033|hc_humiliation|1|5|25|1|0|0|||SUB,SWITCH,SOLO|A|Ecke|Stell dich in die Ecke, Gesicht zur Wand, Hände auf dem Rücken. {min} Minuten. Denk darüber nach, warum du hier stehst.
+HC-034|hc_humiliation|2|4|35|0|0|0|||SUB,SWITCH,SOLO|A|Geständnis|Gestehe laut drei Dinge, bei denen du heute versagt hast. Danach bittest du um Verzeihung, in meiner Anrede.
+HC-035|hc_humiliation|2|15|35|0|0|0|||SUB,SWITCH,SOLO|A|Namensentzug|Du hast {min} Minuten lang keinen Namen. Wenn du von dir sprichst, nennst du dich so, wie ich es bestimme: „Nichtsnutz“ oder ein Wort deiner Wahl, das in deinen Grenzen liegt.
+HC-036|hc_humiliation|2|3|35|0|0|0|||SUB,SWITCH,SOLO|A|Bettelrunde|Bettle um die Erlaubnis, deine nächste Prüfung zu bekommen. Drei Sätze, jeder demütiger als der letzte. Ich entscheide, ob es reicht.
+HC-037|hc_humiliation|2|30|35|0|0|0|||SUB,SWITCH,SOLO|A|Verkehrte Ordnung|Zieh ein Kleidungsstück verkehrt herum an und trag es zu Hause {min} Minuten lang. Nur in deinen vier Wänden, niemand sonst bekommt etwas mit.
+HC-038|hc_humiliation|3|5|45|1|0|0|||SUB,SWITCH,SOLO|A|Das Urteil|Sprich dein eigenes Urteil: „Ich habe diese Prüfung nötig, weil …“. Ergänze ehrlich drei Gründe. Danach {min} Minuten in der Ecke.
+HC-039|hc_humiliation|3|30|45|0|0|0|||SUB,SWITCH,SOLO|A|Lobverbot|Du darfst dich {min} Minuten lang selbst nicht loben und nichts beschönigen. Jede Ausrede wird laut zurückgenommen.
+HC-040|hc_humiliation|3|4|45|1|1|0|||SUB,SWITCH,SOLO|A|Demütige Bitte|Knie dich hin oder verbeuge dich tief und bitte darum, mir weiter dienen zu dürfen. Wiederhole die Bitte, bis sie wirklich ehrlich klingt.
+HC-041|hc_humiliation|3|30|50|0|0|1|||SUB,SWITCH,SOLO|A|Kosename des Tages|Deine Partnerperson gibt dir für die heutige Session einen erniedrigenden Spitznamen aus eurer vereinbarten Liste. Du antwortest nur darauf. {min} Minuten.
+HC-042|hc_humiliation|3|20|45|0|0|0|||SUB,SWITCH,SOLO|A|Erlaubnis zu sprechen|Bevor du sprichst, hebst du die Hand und wartest fünf Atemzüge. Erst dann darfst du reden. {min} Minuten lang.
+HC-043|hc_humiliation|4|6|55|0|0|0|||SUB,SWITCH,SOLO|A|Die Liste der Schwächen|Sprich zehn Dinge laut aus, die du an dir als Spielzeug verbessern musst. Ohne Pause zwischen den Punkten. Stockst du, beginnst du von vorn.
+HC-044|hc_humiliation|4|5|55|1|0|0|||SUB,SWITCH,SOLO|A|Ecke mit Geständnis|Fünf Minuten in der Ecke. Jede Minute sagst du laut einen Satz, warum du dort stehst. Danach bedankst du dich für die Korrektur.
+HC-045|hc_humiliation|4|30|55|0|0|0|||SUB,SWITCH,SOLO|A|Spielzeugstatus|Für {min} Minuten bist du ein Gegenstand. Du sprichst nur, wenn du gefragt wirst, und antwortest mit einem Wort. Safeword gilt immer.
+HC-046|hc_humiliation|4|10|60|1|0|1|||SUB,SWITCH,SOLO|A|Vorführung|Deine Partnerperson lässt dich die vereinbarte Haltung einnehmen und kommentiert sie spöttisch. Du bedankst dich nach jedem Kommentar. Zehn Minuten.
+HC-047|hc_humiliation|5|30|65|0|0|0|||SUB,SWITCH,SOLO|A|Doppelte Demütigung|Kombiniere Dritte Person und Erlaubnis zu sprechen. {min} Minuten. Jeder Fehler wird laut gestanden.
+HC-048|hc_humiliation|5|5|65|0|0|0|||SUB,SWITCH,SOLO|A|Rede des Versagers|Halte eine einminütige Rede darüber, warum du heute die Härte des Dungeons verdienst. Danach wartest du {min} Minuten schweigend auf mein Urteil.
+HC-049|hc_humiliation|5|4|65|0|0|0|||SUB,SWITCH,SOLO|A|Bitte um Härte|Bitte dreimal ausdrücklich um eine strengere nächste Prüfung, jedes Mal mit Begründung. Wenn ich nicht überzeugt bin, war es nicht bestanden.
+HC-050|hc_humiliation|5|10|70|1|0|1|||SUB,SWITCH,SOLO|A|Gehorsamer Gegenstand|Deine Partnerperson stellt dich wie ein Möbelstück in eine bequeme, sichere Haltung und ignoriert dich {min} Minuten. Du rührst dich nur bei Unwohlsein.
+HC-051|hc_humiliation|6|15|75|1|0|0|||SUB,SWITCH,SOLO|A|Völlige Erniedrigung|Drei Stufen: Geständnis, Rede des Versagers, Ecke mit Geständnis. Ohne Unterbrechung. Zwischen den Stufen bittest du um die Erlaubnis weiterzumachen.
+HC-052|hc_humiliation|6|90|75|0|0|0|||SUB,SWITCH,SOLO|A|Tag ohne Namen|Für {min} Minuten gilt: kein Name, nur Dritte Person, Erlaubnis zu sprechen, Lobverbot. Du hältst durch oder du scheiterst.
+HC-053|hc_humiliation|6|10|80|1|0|1|||SUB,SWITCH,SOLO|A|Urteil der Herrschaft|Deine Partnerperson spricht ein spöttisches Urteil über deine heutige Leistung. Du hörst kniend oder stehend zu, wiederholst es Wort für Wort und bedankst dich.
+HC-054|hc_humiliation|2|5|40|0|0|1|||DOM,SWITCH|A|Spott dosieren|Du bist dran: Necke deine Partnerperson fünf Minuten lang mit Spitznamen aus eurer vereinbarten Liste. Danach fragst du, wie es sich angefühlt hat.
+HC-055|hc_humiliation|1|1|25|0|0|0|||SUB,SWITCH,SOLO|A|Zugeben|Gib laut zu, dass du diese Prüfung wolltest. Ein vollständiger Satz, ohne Lachen.
+HC-056|hc_humiliation|4|15|55|0|0|0|||SUB,SWITCH,SOLO|A|Strafbank|Setz dich {min} Minuten auf den Boden in eine Ecke deines Zimmers. Kein Handy, keine Musik. Nur du und dein Versagen.
+HC-057|hc_chastity|1|3|25|0|0|0|||SUB,SWITCH,SOLO|A|Keuschheitsschwur|Sprich deinen Keuschheitsschwur laut: wie lange, warum, für wen. Danach startest du im Keuschheitstracker deine Periode – mit einem Ziel, das du allein festlegst.
+HC-058|hc_chastity|1|3|25|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Verschlusskontrolle|Kontrolliere deinen Verschluss: Sitz, Haut, nichts drückt oder klemmt. Melde mir in einem Satz den Zustand.
+HC-059|hc_chastity|1|30|25|0|0|0|||SUB,SWITCH,SOLO|A|Gedankenkeuschheit|Für {min} Minuten verbiete ich dir jede erotische Ablenkung: keine Bilder, keine Videos, keine Berührungen. Du wartest.
+HC-060|hc_chastity|2|5|35|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Schlüsselzeremonie|Lege den Schlüssel sichtbar an einen festen Ort, den du nur mit Erlaubnis berührst. Der Notfallschlüssel bleibt jederzeit erreichbar. Sprich deinen Schwur.
+HC-061|hc_chastity|2|15|35|1|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Verschlossen dienen|Verschlossen räumst du {min} Minuten lang deinen Wohnbereich auf. Bei jedem Druckgefühl: sofort prüfen.
+HC-062|hc_chastity|2|5|40|0|0|1|||SUB,SWITCH,SOLO|A|Keyholder-Meldung|Melde dich bei deiner Partnerperson als Keyholder: Zustand, Gefühl, Wunsch. Sie entscheidet über die nächste Aufgabe, nicht über deine Gesundheit.
+HC-063|hc_chastity|2|10|35|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Hygienepflicht|Hygienekontrolle nach Plan: reinigen, Haut prüfen, gut abtrocknen. Wenn nötig, Verschluss sofort öffnen und pausieren. Danach meldest du dich zurück.
+HC-064|hc_chastity|3|5|45|1|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Keuschheit unter Prüfung|Verschlossen nimmst du {min} Minuten lang die Wartehaltung ein und denkst an nichts anderes als an deinen Verschluss.
+HC-065|hc_chastity|3|10|45|0|0|0|||SUB,SWITCH,SOLO|A|Versuchung widerstehen|Lies {min} Minuten lang etwas, das dich reizt, ohne dich zu berühren. Danach meldest du, wie stark du warst.
+HC-066|hc_chastity|3|5|50|0|0|1|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Bitte um Aufschluss|Bitte deine Partnerperson förmlich um eine Pause vom Verschluss. Sie darf ablehnen – außer bei Beschwerden, dann wird sofort aufgeschlossen.
+HC-067|hc_chastity|3|5|45|0|0|0|||SUB,SWITCH,SOLO|A|Keuschheitsbericht|Erstatte mir Bericht: Wie lange bist du schon keusch, was fällt dir schwer, was willst du erreichen? Danach einen Eintrag ins Tagebuch.
+HC-068|hc_chastity|4|20|55|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Verschlossene Disziplin|Verschlossen: Anredepflicht und gesenkter Blick für {min} Minuten. Dein Verschluss erinnert dich an jede Regel.
+HC-069|hc_chastity|4|5|60|0|0|1|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Versuchung zu zweit|Deine Partnerperson neckt dich fünf Minuten lang mit Worten, während du verschlossen bleibst. Du bedankst dich am Ende für die Prüfung.
+HC-070|hc_chastity|4|3|55|0|0|0|||SUB,SWITCH,SOLO|A|Ziel bestätigen|Prüfe dein aktuelles Keuschheitsziel im Tracker. Sprich laut aus, ob du es halten willst. Verlängern darfst nur du selbst, und nur wenn es dir gut geht.
+HC-071|hc_chastity|4|60|55|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Der Schlüssel wartet|Lass den Schlüssel bis zum Ende dieser Prüfung liegen: {min} Minuten. Der Notfallschlüssel bleibt griffbereit.
+HC-072|hc_chastity|5|30|65|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Keuschheitsserie|Verschlusskontrolle, Schwur, dann {min} Minuten Gedankenkeuschheit. In dieser Reihenfolge, ohne Abkürzung.
+HC-073|hc_chastity|5|5|70|0|0|1|||SUB,SWITCH,SOLO|A|Keyholder-Verhör|Deine Partnerperson befragt dich fünf Minuten lang zu deinen Gedanken und Wünschen. Du antwortest ehrlich und mit Anrede. Lügen heißt: nicht bestanden.
+HC-074|hc_chastity|5|3|65|0|0|0|||SUB,SWITCH,SOLO|A|Versprechen der Enthaltung|Versprich laut, bis morgen früh auf jeden Höhepunkt zu verzichten. Trag es als Notiz in den Keuschheitstracker ein.
+HC-075|hc_chastity|6|30|75|1|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Eiserne Keuschheit|Verschlusskontrolle, Verschlossen dienen, Versuchung widerstehen – alles hintereinander. Danach Bericht.
+HC-076|hc_chastity|6|120|75|0|0|0|||SUB,SWITCH,SOLO|A|Albtraum der Enthaltung|Für {min} Minuten gilt: keine erotischen Gedanken pflegen, keine Berührung, Anredepflicht. Wenn es dir schlecht geht, brich ab – das zählt nicht gegen dich.
+HC-077|hc_chastity|6|5|80|1|0|1|||SUB,SWITCH,SOLO|A|Keyholder-Urteil|Deine Partnerperson entscheidet über deine nächste Keuschheitsprüfung aus eurer vereinbarten Liste. Du nimmst das Urteil kniend oder stehend an.
+HC-078|hc_chastity|1|2|25|0|0|0|||SUB,SWITCH,SOLO|A|Startschuss|Noch nicht verschlossen? Dann setz dir jetzt ein kleines Keuschheitsziel im Tracker. Klein ist erlaubt. Kneifen ist es nicht.
+HC-079|hc_chastity|3|5|50|0|0|1|||DOM,SWITCH|A|Schlüsselhüter sein|Du verwahrst den Schlüssel deiner Partnerperson. Kontrolliere zweimal am Tag ihr Befinden und gib ihn sofort heraus, wenn sie danach fragt.
+HC-080|hc_chastity|2|30|35|0|0|0|||SUB,SWITCH,SOLO|A|Sieben Atemzüge|Jedes Mal, wenn du in den nächsten {min} Minuten an Erlösung denkst, machst du sieben ruhige Atemzüge und sagst laut: „Nicht jetzt.“
+HC-081|hc_orgasm|1|10|25|1|0|0|||SUB,SWITCH,SOLO|B|Eine Kante|Bring dich einmal bis kurz vor den Höhepunkt. Dann sofort Hände weg. Kein Höhepunkt. Melde dich danach.
+HC-082|hc_orgasm|1|60|25|0|0|0|||SUB,SWITCH,SOLO|A|Erlaubnis zum Höhepunkt|Für die nächsten {min} Minuten gibt es keinen Höhepunkt ohne ausdrückliche Erlaubnis von mir. Und ich erteile sie nicht.
+HC-083|hc_orgasm|2|12|35|1|0|0|||SUB,SWITCH,SOLO|B|Zwei Kanten|Zweimal bis an die Grenze, jedes Mal sofort aufhören. Zwischen den Kanten eine Minute Pause, Hände auf den Oberschenkeln.
+HC-084|hc_orgasm|2|5|35|1|0|0|||SUB,SWITCH,SOLO|B|Stopp auf Kommando|Berühre dich, bis der Countdown endet. Dann sofort Stopp, egal wie nah du bist. Kein Nachgeben.
+HC-085|hc_orgasm|2|10|35|1|0|0|||SUB,SWITCH,SOLO|B|Langsamkeit|Berühre dich zehn Minuten lang so langsam, dass du nicht kommen kannst. Wirst du schneller, ist die Prüfung nicht bestanden.
+HC-086|hc_orgasm|2|5|35|0|0|0|||SUB,SWITCH,SOLO|A|Verzicht verkünden|Verkünde laut, dass du heute auf deinen Höhepunkt verzichtest. Dann warte {min} Minuten in Stille.
+HC-087|hc_orgasm|3|15|45|1|0|0|||SUB,SWITCH,SOLO|B|Drei Kanten|Dreimal an die Grenze. Nach jeder Kante dreißig Sekunden Hände hinter den Kopf. Am Ende: kein Höhepunkt. Bericht.
+HC-088|hc_orgasm|3|12|45|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy-Kante|Nimm {toy}. Zwei Kanten, dann weglegen. Kein Höhepunkt.
+HC-089|hc_orgasm|3|12|45|1|0|0|||SUB,SWITCH,SOLO|B|Bettle um Erlösung|Nach zwei Kanten bettelst du um Erlösung. Die Antwort ist nein. Du bedankst dich trotzdem.
+HC-090|hc_orgasm|3|8|50|1|0|1|||SUB,SWITCH,SOLO|B|Kontrollierte Hände|Deine Partnerperson bestimmt Tempo und Pausen fünf Minuten lang. Du sagst laut Bescheid, bevor du zu nah kommst.
+HC-091|hc_orgasm|3|3|45|0|0|0|||SUB,SWITCH,SOLO|A|Verbot bis morgen|Kein Höhepunkt bis morgen früh. Sprich es als Gelübde aus und notiere es im Tagebuch.
+HC-092|hc_orgasm|4|18|55|1|0|0|||SUB,SWITCH,SOLO|B|Vier Kanten|Vier Kanten mit jeweils einer Minute Haltung dazwischen: kniend oder stehend, Hände hinter dem Kopf. Kein Höhepunkt.
+HC-093|hc_orgasm|4|12|55|1|0|0|||SUB,SWITCH,SOLO|B|Ruinierte Hoffnung|Zwei Kanten. Dann frag mich um Erlaubnis. Ich sage nein. Danach {min} Minuten Wartehaltung.
+HC-094|hc_orgasm|4|15|55|1|0|0|||SUB,SWITCH,SOLO|B|Edging-Leiter|Kante eins nach zwei Minuten, Kante zwei nach vier, Kante drei nach sechs. Halte dich exakt an die Zeiten. Kein Höhepunkt.
+HC-095|hc_orgasm|4|15|60|1|0|1|||SUB,SWITCH,SOLO|B|Fremde Kontrolle|Deine Partnerperson hält dich an drei Kanten. Du sprichst nur, um Bescheid zu geben oder um Erlaubnis zu bitten.
+HC-096|hc_orgasm|4|12|55|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy unter Befehl|{toy}, fünf Minuten auf niedrigster Stufe oder langsamstem Tempo, dann zwei Kanten. Danach weglegen und bedanken.
+HC-097|hc_orgasm|5|20|65|1|0|0|||SUB,SWITCH,SOLO|B|Fünf Kanten|Fünf Kanten. Zwischen jeder Kante sagst du laut, wem dein Höhepunkt gehört. Am Ende kein Höhepunkt.
+HC-098|hc_orgasm|5|15|65|1|0|0|||SUB,SWITCH,SOLO|B|Erlösung verweigert|Drei Kanten, dann Bitte um Erlaubnis. Ich verweigere. Danach {min} Minuten Verzicht ohne jede Berührung.
+HC-099|hc_orgasm|5|30|70|0|0|1|||SUB,SWITCH,SOLO|B|Kontrollierter Abend|Für {min} Minuten liegt jede Berührung bei deiner Partnerperson. Du gibst nur Bescheid und bedankst dich.
+HC-100|hc_orgasm|5|10|65|1|0|0|||SUB,SWITCH,SOLO|B|Countdown-Folter|Berühre dich nur während der letzten fünf Sekunden jeder Minute. Zehn Minuten lang. Kein Höhepunkt.
+HC-101|hc_orgasm|6|25|75|1|0|0|||SUB,SWITCH,SOLO|B|Sechs Kanten|Sechs Kanten, nach jeder dreißig Sekunden Haltung und ein Satz der Unterwerfung. Kein Höhepunkt. Trink danach Wasser.
+HC-102|hc_orgasm|6|25|75|1|0|0|||SUB,SWITCH,SOLO|B|Albtraum der Erlaubnis|Kanten-Serie: zwei, Pause, zwei, Pause, zwei. Nach jeder Serie bittest du. Ich lehne ab. Am Ende {min} Minuten Verzicht.
+HC-103|hc_orgasm|6|180|75|0|0|0|||SUB,SWITCH,SOLO|B|Der lange Verzicht|Kein Höhepunkt für {min} Minuten. Jede Stunde eine Kante, bei Unwohlsein sofort Pause. Das Gelübde sprichst du jetzt laut.
+HC-104|hc_orgasm|3|15|50|0|0|1|||DOM,SWITCH|B|Erlaubnis erteilen|Du kontrollierst: Deine Partnerperson darf nur mit deiner ausdrücklichen Erlaubnis kommen. Achte auf ihr Befinden und hör auf, wenn sie Stopp sagt.
+HC-105|hc_orgasm|1|20|25|0|0|0|||SUB,SWITCH,SOLO|A|Hände weg|Die nächsten {min} Minuten berührst du dich nicht. Kein Test, kein Versehen.
+HC-106|hc_orgasm|5|15|65|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy-Leiter|{toy}: drei Kanten mit steigender Dauer – eine, zwei, drei Minuten. Kein Höhepunkt. Danach wegräumen und Bericht.
+HC-107|hc_anal|1|10|25|0|0|0|Analplugs||SUB,SWITCH,SOLO|B|Vorbereitung|Bereite alles vor: Hygiene, Handtuch, reichlich Gleitmittel, {toy} gereinigt. Nur Toys mit breitem Fuß. Melde dich bereit.
+HC-108|hc_anal|1|2|25|0|0|0|Analplugs||SUB,SWITCH,SOLO|A|Toy-Präsentation|Halte {toy} mit beiden Händen vor dich und erkläre laut, was heute damit passieren darf und was nicht.
+HC-109|hc_anal|2|5|35|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Kurzer Gehorsam|{toy} einführen, langsam und mit Gleitmittel. Fünf Minuten tragen, dabei Wartehaltung. Bei Schmerz sofort entfernen.
+HC-110|hc_anal|2|10|35|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Gefüllte Haltung|{toy} tragen, zehn Minuten. Dabei stehst du in der Inspektionshaltung oder liegst bequem. Danach entfernen und reinigen.
+HC-111|hc_anal|2|10|35|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Dienst mit Plug|Mit {toy} räumst du zehn Minuten auf. Jede Bewegung erinnert dich an deine Rolle.
+HC-112|hc_anal|3|15|45|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Fünfzehn Minuten|{toy}, fünfzehn Minuten. Davon fünf in Wartehaltung, fünf mit Anredepflicht, fünf in Ruhe liegend.
+HC-113|hc_anal|3|10|45|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Gefüllt und gehorsam|{toy} tragen und den Gehorsamsdrill ausführen: Stehen, Warten, Melden. Zehn Minuten. Kein Knien nötig.
+HC-114|hc_anal|3|10|45|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Langsame Gewöhnung|Mit {toy} und viel Gleitmittel zehn Minuten in deinem Tempo spielen. Kein Druck, kein Zwang. Bei Schmerz sofort aufhören.
+HC-115|hc_anal|3|12|50|1|0|1|Analplugs||SUB,SWITCH,SOLO|C|Eingesetzt bekommen|Deine Partnerperson setzt {toy} ein, langsam und nach deiner Rückmeldung. Du bedankst dich danach mit Anrede. Zehn Minuten tragen.
+HC-116|hc_anal|3|10|45|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Plug und Schweigen|{toy} tragen und dabei zehn Minuten absolut schweigen. Nur das Safeword ist erlaubt.
+HC-117|hc_anal|4|20|55|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Zwanzig Minuten|{toy} zwanzig Minuten. Dabei Anredepflicht und Blick gesenkt. Danach entfernen, reinigen, Wasser trinken.
+HC-118|hc_anal|4|15|55|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Plug und Kante|{toy} tragen und zwei Kanten. Kein Höhepunkt. Danach alles entfernen und Bericht.
+HC-119|hc_anal|4|12|60|1|0|1|Analplugs||SUB,SWITCH,SOLO|C|Plug-Inspektion|Deine Partnerperson kontrolliert den Sitz von {toy} und befiehlt dir dann zehn Minuten Wartehaltung.
+HC-120|hc_anal|4|10|55|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Rhythmus nach Befehl|Mit {toy} zehn Minuten nach Countdown: eine Minute langsam, eine Minute Pause. Immer mit Gleitmittel.
+HC-121|hc_anal|4|20|60|1|0|1|Analplugs||SUB,SWITCH,SOLO|C|Gefüllter Dienst|{toy} tragen, Getränk für deine Partnerperson zubereiten und servieren. Zwanzig Minuten insgesamt.
+HC-122|hc_anal|5|30|65|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Halbe Stunde|{toy} dreißig Minuten. Alle zehn Minuten eine kurze Meldung über dein Befinden. Länger ist nicht erlaubt.
+HC-123|hc_anal|5|20|65|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Plug-Serie|{toy} tragen, dabei Inspektionshaltung, Regelaufsagen und drei Kanten. Zwanzig Minuten. Kein Höhepunkt.
+HC-124|hc_anal|5|15|70|1|0|1|Dildos||SUB,SWITCH,SOLO|C|Unter fremder Hand|Deine Partnerperson spielt fünfzehn Minuten mit {toy} nach deinen Rückmeldungen. Ampelsystem: grün, gelb, rot.
+HC-125|hc_anal|6|30|75|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Gefüllte Nacht-Prüfung|{toy} dreißig Minuten, Protokoll komplett: Anrede, Blick gesenkt, Dankespflicht, zwei Kanten. Danach entfernen und Aftercare.
+HC-126|hc_anal|6|25|75|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Albtraum-Folge|Zweimal zehn Minuten {toy} mit fünf Minuten Pause dazwischen. In jeder Runde ein anderer Befehl aus deinem Regelbuch.
+HC-127|hc_anal|3|10|50|0|0|1|||DOM,SWITCH|C|Plug verordnen|Du verordnest deiner Partnerperson zehn Minuten Plug nach eurer Absprache. Du überwachst ihr Befinden und beendest sofort bei Unwohlsein.
+HC-128|hc_anal|1|5|25|0|0|0|Analplugs||SUB,SWITCH,SOLO|A|Reinigungsritual|Reinige {toy} gründlich und präsentiere es mir wie ein wertvolles Werkzeug. Danach zurück an seinen Platz.
+HC-129|hc_toy|1|3|25|0|0|0|Dildos||SUB,SWITCH,SOLO|A|Das Rad hat gewählt|{toy}. Leg es vor dich und warte {min} Minuten, ohne es zu berühren. Erst dann darfst du es nehmen.
+HC-130|hc_toy|1|5|25|0|0|0|||SUB,SWITCH,SOLO|A|Toy-Inventur|Lege alle deine Toys in einer Reihe aus. Nenne zu jedem laut seinen Zweck. Dann wähle ich.
+HC-131|hc_toy|1|2|25|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|A|Toy-Präsentation|Präsentiere {toy} mit gestreckten Armen. Sprich laut, warum du es heute verdienst.
+HC-132|hc_toy|2|5|35|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Fünf Minuten Gebrauch|{toy}, fünf Minuten nach deinem Tempo. Kein Höhepunkt. Danach weglegen und bedanken.
+HC-133|hc_toy|2|10|35|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|A|Toy und Haltung|Halte {toy} in der Hand und nimm zehn Minuten lang die Wartehaltung ein. Lässt du es fallen, beginnst du neu.
+HC-134|hc_toy|2|8|35|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Tempo nach Uhr|{toy}: abwechselnd dreißig Sekunden an, dreißig Sekunden aus. Acht Minuten. Kein Höhepunkt.
+HC-135|hc_toy|3|10|45|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Zehn Minuten Befehl|{toy}, zehn Minuten. In der Mitte zwei Minuten völlige Pause mit Händen hinter dem Kopf.
+HC-136|hc_toy|3|10|45|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy-Bericht|Benutze {toy} acht Minuten. Danach berichtest du mir mündlich, ohne zu beschönigen.
+HC-137|hc_toy|3|12|45|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Wechselbad|Zwei Toys im Wechsel, je drei Minuten, insgesamt zwölf Minuten. Beginne mit {toy}.
+HC-138|hc_toy|3|10|50|1|0|1|Dildos||SUB,SWITCH,SOLO|C|Fremdbestimmt|Deine Partnerperson wählt {toy} und bestimmt zehn Minuten lang, wann es benutzt wird.
+HC-139|hc_toy|3|30|45|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Accessoire-Pflicht|Trag {toy} (Halsband, Manschetten oder Ähnliches, nichts Einschnürendes) für {min} Minuten zu Hause.
+HC-140|hc_toy|4|15|55|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Fünfzehn Minuten Hingabe|{toy}, fünfzehn Minuten, mit drei Kanten. Kein Höhepunkt.
+HC-141|hc_toy|4|10|55|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy und Protokoll|{toy} benutzen und dabei Anredepflicht und Dankespflicht einhalten. Zehn Minuten.
+HC-142|hc_toy|4|12|55|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy-Duell|Zwei Durchgänge mit {toy}: einer schnell, einer langsam, je fünf Minuten. Dazwischen Bericht. Kein Höhepunkt.
+HC-143|hc_toy|4|10|60|1|0|1|Dildos||SUB,SWITCH,SOLO|C|Gefesselte Wahl|Deine Partnerperson setzt dir Manschetten an (locker, Schere griffbereit) und benutzt {toy} fünf Minuten nach Ampelsystem.
+HC-144|hc_toy|5|20|65|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Zwanzig Minuten Dienst am Toy|{toy} zwanzig Minuten: fünf Minuten Gebrauch, fünf Minuten Haltung, im Wechsel. Kein Höhepunkt.
+HC-145|hc_toy|5|18|65|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy-Serie|Toy-Präsentation, zehn Minuten Gebrauch mit {toy}, zwei Kanten, Bericht. Keine Abkürzung.
+HC-146|hc_toy|5|10|70|1|0|1|Dildos||SUB,SWITCH,SOLO|C|Unter Aufsicht|Deine Partnerperson schaut zu, wie du {toy} zehn Minuten nach ihren Ansagen benutzt.
+HC-147|hc_toy|6|20|75|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Albtraum-Toybox|Drei Toys, drei Runden à fünf Minuten, nach jeder Runde eine Minute Haltung. Kein Höhepunkt. Beginne mit {toy}.
+HC-148|hc_toy|6|30|75|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Totale Toy-Kontrolle|{toy} dreißig Minuten in Intervallen: zwei Minuten an, drei Minuten Pause. Kein Höhepunkt. Danach Aftercare.
+HC-149|hc_toy|2|5|40|0|0|1|||DOM,SWITCH|A|Toy auswählen lassen|Wähle für deine Partnerperson ein Toy aus eurer gemeinsamen Liste und erkläre, wie es eingesetzt werden darf. Sie sagt Ja oder Nein.
+HC-150|hc_toy|1|5|25|0|0|0|Dildos||SUB,SWITCH,SOLO|A|Toy pflegen|Reinige und pflege {toy} gründlich. Ein sauberes Werkzeug ist die Pflicht jedes gehorsamen Spielzeugs.
+HC-151|hc_cbt|1|3|25|1|0|0||PENIS|SUB,SWITCH,SOLO|A|Präsentation|Präsentiere dich in der Inspektionshaltung. Kein Anfassen. {min} Minuten lang wirst du nur betrachtet.
+HC-152|hc_cbt|1|20|25|0|0|0||PENIS|SUB,SWITCH,SOLO|A|Berührungsverbot|Du fasst dich {min} Minuten nicht an. Nicht einmal zufällig.
+HC-153|hc_cbt|1|5|25|1|0|0||PENIS|SUB,SWITCH,SOLO|B|Federstrich|Mit einer Feder oder einem weichen Pinsel: fünf Minuten zarte Reize, nichts anderes.
+HC-154|hc_cbt|2|4|35|1|0|0||PENIS|SUB,SWITCH,SOLO|B|Kühles Tuch|Ein kühles, feuchtes Tuch – kein Eis direkt auf die Haut. Eine Minute auflegen, dann abnehmen und prüfen. Zweimal.
+HC-155|hc_cbt|2|5|35|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Session-Rahmen I|Fünf Minuten nach deiner eigenen, vorher notierten Liste von Praktiken, die du sicher beherrschst. Keine Schläge, nichts Einschnürendes, kein starker Druck. Danach Hautkontrolle.
+HC-156|hc_cbt|2|10|35|0|0|0||PENIS|SUB,SWITCH,SOLO|A|Verbale Unterwerfung|Sprich laut: „Mein Körper gehört heute diesem Spiel – innerhalb meiner Grenzen.“ Danach {min} Minuten Berührungsverbot.
+HC-157|hc_cbt|2|5|35|0|0|0||PENIS|SUB,SWITCH,SOLO|B|Nachsorgepflicht|Nach jeder Session: Haut prüfen, kühlen wenn nötig, Wasser trinken, Bericht an mich.
+HC-158|hc_cbt|3|10|45|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Session-Rahmen II|Zehn Minuten nach deiner Liste, mit Check-in alle zwei Minuten: Farbe, Gefühl, Ampel. Gelb heißt leiser, Rot heißt Ende.
+HC-159|hc_cbt|3|20|45|0|0|0||PENIS|SUB,SWITCH,SOLO|A|Erlaubnis erbitten|Bevor du dich in den nächsten {min} Minuten berührst, bittest du jedes Mal laut um Erlaubnis und wartest zehn Atemzüge.
+HC-160|hc_cbt|3|4|45|1|0|0||PENIS|SUB,SWITCH,SOLO|B|Warmes Tuch|Warmes Tuch, vorher am Handgelenk auf Temperatur geprüft. Zwei Minuten, dann Hautkontrolle.
+HC-161|hc_cbt|3|8|50|1|0|1||PENIS|SUB,SWITCH,SOLO|S|Partner-Inspektion|Deine Partnerperson inspiziert dich nach eurer Absprache. Berührung nur so, wie vereinbart. Danach Aftercare.
+HC-162|hc_cbt|4|15|55|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Session-Rahmen III|Fünfzehn Minuten nach deiner Liste, drei feste Check-ins. Danach mindestens zehn Minuten Pause. Keine Schläge, nichts Einschnürendes.
+HC-163|hc_cbt|4|6|55|1|0|0|Keuschheitszubehör|PENIS|SUB,SWITCH,SOLO|B|Verschlossene Präsentation|Verschlossen in {toy}: Inspektionshaltung, fünf Minuten. Danach Verschlusskontrolle.
+HC-164|hc_cbt|4|30|55|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Geduldsprobe|Berührungsverbot für {min} Minuten, danach fünf Minuten Session-Rahmen nach deiner Liste.
+HC-165|hc_cbt|5|15|65|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Rahmen und Bericht|Zehn Minuten Session-Rahmen, dann ausführlicher mündlicher Bericht: was ging, was war zu viel, was bleibt tabu.
+HC-166|hc_cbt|5|15|70|1|0|1||PENIS|SUB,SWITCH,SOLO|S|Partner-Session|Fünfzehn Minuten nach eurer gemeinsam vereinbarten Liste, Ampel-Check alle drei Minuten. Deine Partnerperson führt, du meldest.
+HC-167|hc_cbt|6|25|75|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Albtraum-Rahmen|Drei Runden à fünf Minuten Session-Rahmen, jeweils fünf Minuten Pause mit Check-in dazwischen. Abbrechen ist jederzeit erlaubt.
+HC-168|hc_cbt|6|30|75|1|0|0||PENIS|SUB,SWITCH,SOLO|S|Totale Kontrolle des Körpers|Für {min} Minuten gehört jede Berührung mir: Erlaubnis erbitten, dann zehn Minuten Session-Rahmen, dann Nachsorge.
+HC-169|hc_pussy|1|3|25|1|0|0||VULVA|SUB,SWITCH,SOLO|A|Präsentation|Präsentiere dich in der Inspektionshaltung. Kein Anfassen. {min} Minuten lang wirst du nur betrachtet.
+HC-170|hc_pussy|1|20|25|0|0|0||VULVA|SUB,SWITCH,SOLO|A|Berührungsverbot|Du fasst dich {min} Minuten nicht an. Keine Ausnahmen, kein Testen.
+HC-171|hc_pussy|1|5|25|1|0|0||VULVA|SUB,SWITCH,SOLO|B|Federstrich|Mit einer Feder oder einem weichen Pinsel: fünf Minuten zarte Reize, mehr nicht.
+HC-172|hc_pussy|2|4|35|1|0|0||VULVA|SUB,SWITCH,SOLO|B|Kühles Tuch|Ein kühles, feuchtes Tuch – kein Eis direkt auf die Haut. Eine Minute auflegen, abnehmen, prüfen. Zweimal.
+HC-173|hc_pussy|2|5|35|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Session-Rahmen I|Fünf Minuten nach deiner eigenen, vorher notierten Liste von Praktiken, die du sicher beherrschst. Kein starker Druck, keine Schläge. Danach Hautkontrolle.
+HC-174|hc_pussy|2|10|35|0|0|0||VULVA|SUB,SWITCH,SOLO|A|Verbale Unterwerfung|Sprich laut: „Mein Körper gehört heute diesem Spiel – innerhalb meiner Grenzen.“ Danach {min} Minuten Berührungsverbot.
+HC-175|hc_pussy|2|5|35|0|0|0||VULVA|SUB,SWITCH,SOLO|B|Nachsorgepflicht|Nach jeder Session: Haut prüfen, Wasser trinken, ausruhen, Bericht an mich.
+HC-176|hc_pussy|3|10|45|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Session-Rahmen II|Zehn Minuten nach deiner Liste, mit Check-in alle zwei Minuten: Gefühl, Ampel. Gelb heißt sanfter, Rot heißt Ende.
+HC-177|hc_pussy|3|20|45|0|0|0||VULVA|SUB,SWITCH,SOLO|A|Erlaubnis erbitten|Bevor du dich in den nächsten {min} Minuten berührst, bittest du jedes Mal laut um Erlaubnis und wartest zehn Atemzüge.
+HC-178|hc_pussy|3|10|45|1|0|0|Dildos|VULVA|SUB,SWITCH,SOLO|C|Toy-Rahmen|{toy}, zehn Minuten nach deiner Liste, mit Gleitmittel und in deinem Tempo. Kein Höhepunkt ohne Erlaubnis.
+HC-179|hc_pussy|3|8|50|1|0|1||VULVA|SUB,SWITCH,SOLO|S|Partner-Inspektion|Deine Partnerperson inspiziert dich nach eurer Absprache. Berührung nur so, wie vereinbart. Danach Aftercare.
+HC-180|hc_pussy|4|15|55|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Session-Rahmen III|Fünfzehn Minuten nach deiner Liste, drei feste Check-ins. Danach mindestens zehn Minuten Pause.
+HC-181|hc_pussy|4|30|55|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Geduldsprobe|Berührungsverbot für {min} Minuten, danach fünf Minuten Session-Rahmen nach deiner Liste.
+HC-182|hc_pussy|4|4|55|1|0|0||VULVA|SUB,SWITCH,SOLO|B|Warmes Tuch|Warmes Tuch, vorher am Handgelenk geprüft. Zwei Minuten, dann Hautkontrolle.
+HC-183|hc_pussy|5|15|65|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Rahmen und Bericht|Zehn Minuten Session-Rahmen, dann ausführlicher mündlicher Bericht: was ging, was war zu viel, was bleibt tabu.
+HC-184|hc_pussy|5|15|70|1|0|1||VULVA|SUB,SWITCH,SOLO|S|Partner-Session|Fünfzehn Minuten nach eurer vereinbarten Liste, Ampel-Check alle drei Minuten. Deine Partnerperson führt, du meldest.
+HC-185|hc_pussy|6|25|75|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Albtraum-Rahmen|Drei Runden à fünf Minuten Session-Rahmen, jeweils fünf Minuten Pause mit Check-in dazwischen. Abbrechen ist jederzeit erlaubt.
+HC-186|hc_pussy|6|30|75|1|0|0||VULVA|SUB,SWITCH,SOLO|S|Totale Kontrolle des Körpers|Für {min} Minuten gehört jede Berührung mir: Erlaubnis erbitten, zehn Minuten Session-Rahmen, dann Nachsorge.
+HC-187|hc_nipple|1|5|25|1|0|0|||SUB,SWITCH,SOLO|B|Zarte Kontrolle|Fünf Minuten nur mit den Fingerspitzen, sanft und langsam. Mehr gibt es heute nicht.
+HC-188|hc_nipple|1|4|25|1|0|0|||SUB,SWITCH,SOLO|B|Feder|Eine Feder oder ein weicher Pinsel, vier Minuten. Hände danach hinter den Kopf.
+HC-189|hc_nipple|2|3|35|1|0|0|||SUB,SWITCH,SOLO|C|Kneifen nach Takt|Leichtes Kneifen im Takt des Countdowns: fünf Sekunden an, zehn Sekunden Pause. Drei Minuten.
+HC-190|hc_nipple|2|3|35|1|0|0|||SUB,SWITCH,SOLO|B|Kühler Reiz|Ein kalter Löffel oder ein kühles Tuch, je dreißig Sekunden pro Seite. Kein Eis direkt.
+HC-191|hc_nipple|2|4|35|1|0|0|||SUB,SWITCH,SOLO|C|Wäscheklammer-Probe|Eine Holz-Wäscheklammer, erst am Finger testen. Dann eine Minute pro Seite. Langsam abnehmen.
+HC-192|hc_nipple|3|5|45|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Klammern: drei Minuten|{toy} – drei Minuten, dann langsam lösen. Vorher am Finger testen. Bei Taubheit sofort ab.
+HC-193|hc_nipple|3|5|45|1|0|0|||SUB,SWITCH,SOLO|C|Kneifen und Bitten|Leichtes Kneifen, dann um Erlaubnis bitten, weiterzumachen. Fünf Runden.
+HC-194|hc_nipple|3|5|45|1|0|0|||SUB,SWITCH,SOLO|B|Temperaturwechsel|Kühles Tuch, dann warmes Tuch (vorher am Handgelenk geprüft), je eine Minute. Zweimal.
+HC-195|hc_nipple|3|5|50|1|0|1|||SUB,SWITCH,SOLO|C|Partner-Hände|Deine Partnerperson spielt fünf Minuten nach eurer Absprache. Du meldest jede Steigerung mit Ampel.
+HC-196|hc_nipple|4|6|55|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Klammern: fünf Minuten|{toy} – fünf Minuten in Wartehaltung. Länger nicht. Danach langsam lösen und Haut prüfen.
+HC-197|hc_nipple|4|5|55|1|0|0|||SUB,SWITCH,SOLO|C|Klammer und Protokoll|Wäscheklammern zwei Minuten pro Seite, dabei Anredepflicht. Jeder Satz an mich beginnt mit meiner Anrede.
+HC-198|hc_nipple|4|7|55|1|0|0|||SUB,SWITCH,SOLO|C|Reizserie|Feder, kühler Reiz, leichtes Kneifen – je eine Minute, zweimal hintereinander.
+HC-199|hc_nipple|4|6|60|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Klammern unter Aufsicht|Deine Partnerperson setzt {toy} und nimmt sie nach höchstens fünf Minuten wieder ab.
+HC-200|hc_nipple|5|10|65|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Doppelte Klammer-Runde|{toy}: zweimal drei Minuten, mit drei Minuten Pause dazwischen. Haut prüfen nach jeder Runde.
+HC-201|hc_nipple|5|8|65|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Klammer und Kante|Klammern drei Minuten, dabei eine Kante. Danach alles ab. Kein Höhepunkt.
+HC-202|hc_nipple|5|8|70|1|0|1|||SUB,SWITCH,SOLO|C|Partner-Reizserie|Deine Partnerperson führt die Reizserie zweimal durch und fragt nach jeder Stufe deine Ampel ab.
+HC-203|hc_nipple|6|18|75|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Albtraum-Klammern|Drei Runden {toy}: zwei, drei, vier Minuten, mit je drei Minuten Pause. Haut prüfen. Bei Taubheit sofort Schluss.
+HC-204|hc_nipple|6|15|75|1|0|0|||SUB,SWITCH,SOLO|C|Totale Reizkontrolle|Reizserie, Klammern drei Minuten, Temperaturwechsel. Danach fünf Minuten Wartehaltung.
+HC-205|hc_nipple|2|5|40|0|0|1|||DOM,SWITCH|B|Reize setzen|Du führst: Setze deiner Partnerperson fünf Minuten lang sanfte Reize mit Feder und Fingern und frag regelmäßig nach.
+HC-206|hc_nipple|1|3|25|1|0|0|||SUB,SWITCH,SOLO|A|Präsentiert|Hände hinter den Kopf, Brust raus. {min} Minuten so verharren. Ich betrachte nur.
+HC-207|hc_bondage|1|5|25|0|0|0|||SUB,SWITCH,SOLO|A|Augenbinde|Augenbinde an. {min} Minuten still sitzen oder liegen und nur hören. Abnehmen jederzeit erlaubt.
+HC-208|hc_bondage|1|30|25|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Halsband anlegen|Leg dein Halsband an – zwei Finger Platz, nie eng. Trag es {min} Minuten zu Hause.
+HC-209|hc_bondage|1|5|25|1|0|0|||SUB,SWITCH,SOLO|A|Unsichtbare Fesseln|Verschränke die Hände hinter dem Rücken, als wären sie gefesselt. Fünf Minuten. Du darfst sie jederzeit lösen.
+HC-210|hc_bondage|2|5|35|1|0|0|||SUB,SWITCH,SOLO|B|Blind gehorchen|Mit Augenbinde nimmst du {min} Minuten lang die Wartehaltung ein. Sorg vorher für eine sichere Umgebung.
+HC-211|hc_bondage|2|20|35|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Manschetten tragen|{toy} an Hand- oder Fußgelenken anlegen, locker, nicht verbunden. {min} Minuten tragen.
+HC-212|hc_bondage|2|5|35|1|0|0|||SUB,SWITCH,SOLO|A|Gefesselte Haltung|Hände hinter dem Kopf verschränkt, Augen geschlossen, fünf Minuten. Du stellst dir vor, gefesselt zu sein – mehr nicht.
+HC-213|hc_bondage|2|10|40|1|0|1|||SUB,SWITCH,SOLO|C|Handgelenke gebunden|Deine Partnerperson bindet deine Handgelenke vor dem Körper locker mit einem weichen Tuch. Zehn Minuten. Schere griffbereit, Finger regelmäßig bewegen.
+HC-214|hc_bondage|3|15|50|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Manschetten verbunden|Deine Partnerperson verbindet deine Manschetten vorne mit einem Schnellverschluss. Fünfzehn Minuten, alle fünf Minuten Finger prüfen: warm, beweglich, normale Farbe.
+HC-215|hc_bondage|3|15|50|1|0|1|||SUB,SWITCH,SOLO|C|Einfache Seilfessel|Deine Partnerperson legt eine einfache Handgelenksfessel mit Seil an, zwei Finger Platz. Fünfzehn Minuten. Sicherheitsschere griffbereit.
+HC-216|hc_bondage|3|10|45|0|0|0|||SUB,SWITCH,SOLO|B|Blind und stumm|Augenbinde und Schweigegelübde, {min} Minuten. Erlaubt ist nur das Safeword.
+HC-217|hc_bondage|3|30|45|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Halsband-Protokoll|Halsband an, dazu Anredepflicht. {min} Minuten.
+HC-218|hc_bondage|3|10|50|0|0|1|||SUB,SWITCH,SOLO|A|Fesselung vorbereiten|Lege Seil, Schere, Decke und Wasser bereit. Bespreche mit deiner Partnerperson Signale, Ampel und Zeitrahmen.
+HC-219|hc_bondage|4|10|60|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Hände auf dem Rücken|Deine Partnerperson fesselt deine Hände hinter dem Rücken locker mit Manschetten. Zehn Minuten, dabei sitzen oder knien mit Kissen.
+HC-220|hc_bondage|4|15|60|1|0|1|||SUB,SWITCH,SOLO|C|Blind gefesselt|Augenbinde und locker gebundene Handgelenke durch deine Partnerperson. Fünfzehn Minuten. Sie bleibt die ganze Zeit im Raum.
+HC-221|hc_bondage|4|20|60|1|0|1|||SUB,SWITCH,SOLO|C|Seil-Brustharness|Deine Partnerperson knüpft ein einfaches, lockeres Brustharness. Zwanzig Minuten. Atmung frei, keine Schlinge am Hals.
+HC-222|hc_bondage|4|10|55|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Manschetten und Gehorsam|{toy} an Hand- und Fußgelenken, unverbunden. Dazu Gehorsamsdrill, zehn Minuten.
+HC-223|hc_bondage|5|20|70|1|0|1|||SUB,SWITCH,SOLO|C|Gefesselte Prüfung|Deine Partnerperson fesselt dich locker an Handgelenken und lässt dich zwanzig Minuten lang ihre Befehle befolgen. Check-in alle fünf Minuten.
+HC-224|hc_bondage|5|20|70|1|0|1|||SUB,SWITCH,SOLO|C|Seil und Sinne|Lockere Seilfesselung der Arme, dazu Augenbinde und Feder-Reize durch deine Partnerperson. Zwanzig Minuten. Schere griffbereit.
+HC-225|hc_bondage|5|90|65|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Halsband-Tag|Halsband für {min} Minuten zu Hause, dazu komplettes Protokoll. Bei jedem Druckgefühl sofort lockern.
+HC-226|hc_bondage|6|30|80|1|0|1|||SUB,SWITCH,SOLO|C|Albtraum-Fesselung|Deine Partnerperson fesselt Hände und Füße getrennt und locker, Augenbinde, dreißig Minuten mit Check-in alle fünf Minuten. Sie verlässt den Raum nie.
+HC-227|hc_bondage|6|30|80|1|0|1|||SUB,SWITCH,SOLO|C|Totale Hilflosigkeit|Lockere Fesselung, Augenbinde, Schweigegelübde, dazu Reizserie durch deine Partnerperson. Dreißig Minuten, Ampel jederzeit.
+HC-228|hc_bondage|2|10|40|0|0|1|||DOM,SWITCH|C|Fesseln anlegen|Du fesselst deine Partnerperson locker an den Handgelenken. Zehn Minuten. Du bleibst im Raum, prüfst regelmäßig Farbe und Gefühl der Finger und hast die Schere griffbereit.
+HC-229|hc_bondage|4|20|60|0|0|1|||DOM,SWITCH|C|Fesselkunst üben|Übe an deiner Partnerperson ein einfaches Shibari-Muster am Unterarm. Locker, Schere griffbereit, regelmäßig nachfragen.
+HC-230|hc_bondage|1|2|25|0|0|0|||SUB,SWITCH,SOLO|A|Seil kennenlernen|Nimm dein Seil oder ein weiches Tuch in die Hände. Fühle es zwei Minuten lang. So wird sich Kontrolle anfühlen.
+HC-231|hc_impact|1|3|25|1|0|0|||SUB,SWITCH,SOLO|C|Zehn Leichte|Zehn leichte Klapse mit der flachen Hand auf dein Gesäß. Laut mitzählen. Nur Gesäß, nie Rücken oder Nieren.
+HC-232|hc_impact|1|2|25|1|0|0|||SUB,SWITCH,SOLO|B|Aufwärmen|Zwei Minuten aufwärmen: reiben, leichtes Klopfen auf das Gesäß. Ohne Aufwärmen gibt es kein Impact.
+HC-233|hc_impact|2|4|35|1|0|0|||SUB,SWITCH,SOLO|C|Fünfzehn gezählt|Fünfzehn Klapse, abwechselnd links und rechts. Jeden zählst du laut und bedankst dich. Leicht bis mittel.
+HC-234|hc_impact|2|4|35|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Paddel-Gruß|Mit {toy}: zehn leichte Schläge auf das Gesäß, nach dem Aufwärmen. Laut zählen.
+HC-235|hc_impact|2|3|35|1|0|0|||SUB,SWITCH,SOLO|C|Oberschenkel-Erinnerung|Zehn leichte Klapse auf die Rückseite der Oberschenkel. Nie auf Knie oder Kniekehle.
+HC-236|hc_impact|2|5|40|1|0|1|||SUB,SWITCH,SOLO|C|Hand der Partnerperson|Deine Partnerperson gibt dir fünfzehn leichte Klapse auf das Gesäß. Du zählst und bedankst dich. Ampel jederzeit.
+HC-237|hc_impact|3|6|45|1|0|0|||SUB,SWITCH,SOLO|C|Zwanzig mit Dank|Aufwärmen, dann zwanzig Klapse, nach jedem fünften eine kurze Pause und ein Dank. Leicht bis mittel.
+HC-238|hc_impact|3|6|45|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Paddel-Serie|{toy}: zwei Serien à zehn, mit einer Minute Pause. Nur Gesäß. Haut prüfen.
+HC-239|hc_impact|3|6|45|1|0|0|||SUB,SWITCH,SOLO|C|Zählfehler|Fünfzehn Klapse, laut gezählt. Verzählst du dich, beginnst du bei null. Aber höchstens dreißig insgesamt.
+HC-240|hc_impact|3|8|50|1|0|1|||SUB,SWITCH,SOLO|C|Über dem Knie|Deine Partnerperson legt dich übers Knie. Zwanzig Klapse nach Aufwärmen, Ampel nach jedem fünften.
+HC-241|hc_impact|3|5|45|1|0|0|||SUB,SWITCH,SOLO|C|Bitte um den Nächsten|Zwölf Klapse. Vor jedem bittest du laut darum. Ohne Bitte kein Klaps, ohne alle zwölf kein Bestehen.
+HC-242|hc_impact|4|8|55|1|0|0|||SUB,SWITCH,SOLO|C|Fünfundzwanzig|Aufwärmen, dann fünfundzwanzig Klapse in fünf Serien. Nach jeder Serie Hände an die Wand und Dank.
+HC-243|hc_impact|4|8|55|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Paddel und Protokoll|{toy}: zwanzig Schläge, nach jedem fünften Anredepflicht und ein Satz, warum du ihn verdienst.
+HC-244|hc_impact|4|10|60|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Gemischte Hand|Deine Partnerperson wechselt zwischen Hand und {toy}, fünfundzwanzig insgesamt. Check-in nach jedem fünften.
+HC-245|hc_impact|4|6|55|1|0|0|||SUB,SWITCH,SOLO|C|Rhythmusprüfung|Zwanzig Klapse im Takt des Countdowns: alle fünf Sekunden einer. Du hältst den Takt oder fängst neu an – höchstens zweimal.
+HC-246|hc_impact|4|8|55|1|0|0|||SUB,SWITCH,SOLO|C|Ecke danach|Fünfzehn Klapse, danach fünf Minuten Ecke mit Händen auf dem Kopf.
+HC-247|hc_impact|5|10|65|1|0|0|||SUB,SWITCH,SOLO|C|Dreißig|Aufwärmen, dreißig Klapse in sechs Serien, Haut zwischendurch prüfen. Nicht stärker als mittel.
+HC-248|hc_impact|5|10|65|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Paddel-Gericht|{toy}: drei Serien à zehn mit je einer Minute Haltung dazwischen. Nach jeder Serie bedankst du dich mit vollem Satz.
+HC-249|hc_impact|5|12|70|1|0|1|||SUB,SWITCH,SOLO|C|Strafe der Partnerperson|Deine Partnerperson gibt dir dreißig nach Aufwärmen, in Serien, mit Ampel nach jeder Serie. Danach Aftercare.
+HC-250|hc_impact|5|15|65|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Impact-Serie|Zwanzig Klapse, fünf Minuten Ecke, zehn Klapse mit {toy}. Haut prüfen.
+HC-251|hc_impact|6|15|75|1|0|0|||SUB,SWITCH,SOLO|C|Albtraum-Zählung|Zwei Runden à zwanzig mit fünf Minuten Pause in Wartehaltung. Laut zählen und bedanken. Nicht stärker als mittel.
+HC-252|hc_impact|6|18|75|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Paddel-Albtraum|{toy}: vier Serien à zehn, zwischen den Serien je zwei Minuten Haltung. Haut prüfen. Bei Taubheit oder Schwellung sofort Schluss.
+HC-253|hc_impact|6|20|80|1|0|1|||SUB,SWITCH,SOLO|C|Urteil am Knie|Deine Partnerperson: Aufwärmen, vierzig in Serien, Ampel nach jeder Serie, danach mindestens zehn Minuten Aftercare.
+HC-254|hc_impact|2|5|40|0|0|1|||DOM,SWITCH|C|Hand führen|Du gibst deiner Partnerperson nach Aufwärmen fünfzehn leichte Klapse auf das Gesäß. Frag nach jedem fünften nach ihrer Ampel.
+HC-255|hc_impact|4|10|60|0|0|1|BDSM-Zubehör||DOM,SWITCH|C|Paddel führen|Du führst {toy}: zwanzig Schläge in Serien auf das Gesäß deiner Partnerperson, mit Check-ins und anschließender Aftercare.
+HC-256|hc_impact|1|2|25|1|0|0|||SUB,SWITCH,SOLO|C|Gezählt und bedankt|Fünf Klapse. Nach jedem: „Danke.“ Mehr verdienst du heute noch nicht.
+HC-257|hc_pet|1|3|25|1|0|0|||SUB,SWITCH,SOLO|A|Sitz|Sitz! Setz dich wie ein Pet auf den Boden oder ein Kissen und warte {min} Minuten auf das nächste Kommando.
+HC-258|hc_pet|1|10|25|0|0|0|||SUB,SWITCH,SOLO|A|Pet-Laute|{min} Minuten lang keine Worte, nur Laute deiner Pet-Rolle. Das Safeword darfst du immer sprechen.
+HC-259|hc_pet|1|20|25|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Halsband fürs Pet|Leg das Halsband an – zwei Finger Platz. Du bist jetzt {min} Minuten lang Pet.
+HC-260|hc_pet|2|3|35|1|1|0|||SUB,SWITCH,SOLO|B|Auf allen Vieren|Eine kurze Strecke auf allen Vieren über einen weichen Boden. Hin und zurück. Knieschoner oder Decke benutzen.
+HC-261|hc_pet|2|5|35|1|0|0|||SUB,SWITCH,SOLO|A|Platz und bleib|Platz! Leg dich auf die Seite und bleib {min} Minuten liegen, bis das Kommando endet.
+HC-262|hc_pet|2|2|35|1|0|0|||SUB,SWITCH,SOLO|A|Napf|Trink Wasser aus einem sauberen Napf, ohne Hände. Ein paar Schlucke reichen.
+HC-263|hc_pet|2|3|35|1|0|0|||SUB,SWITCH,SOLO|A|Pfötchen|Gib Pfötchen: Hand auf Kommando ausstrecken, zehnmal. Jedes Mal ein Pet-Laut als Dank.
+HC-264|hc_pet|3|8|50|1|0|1|||SUB,SWITCH,SOLO|B|Apportieren|Deine Partnerperson wirft ein weiches Spielzeug. Bring es zurück, fünfmal. Auf allen Vieren nur mit Knieschutz, sonst gebückt gehen.
+HC-265|hc_pet|3|5|45|1|1|0|||SUB,SWITCH,SOLO|B|Pet-Parcours|Ein kurzer, sicherer Parcours im Zimmer: um zwei Kissen herum, unter einem Tisch durch (nur wenn genug Platz). Zweimal.
+HC-266|hc_pet|3|5|45|1|0|0|||SUB,SWITCH,SOLO|A|Brav warten|Sitz vor deinem Napf und warte {min} Minuten, bis du trinken darfst. Wasser bleibt in Reichweite.
+HC-267|hc_pet|3|6|45|1|0|0|||SUB,SWITCH,SOLO|B|Kommando-Kette|Sitz, Platz, Pfötchen, Rolle (nur wenn bequem), Sitz. Fünf Durchgänge ohne Fehler.
+HC-268|hc_pet|3|3|45|1|0|0|||SUB,SWITCH,SOLO|A|Pony-Schritt|Pony: zwei Minuten hohe Schritte auf der Stelle, Hände als Hufe vor der Brust. Danach Ruhe.
+HC-269|hc_pet|4|6|60|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Gassi|Mit Halsband und Leine folgst du deiner Partnerperson fünf Minuten durch die Wohnung, aufrecht oder auf allen Vieren mit Knieschutz.
+HC-270|hc_pet|4|5|55|1|0|0|||SUB,SWITCH,SOLO|A|Pet-Ritual|Begrüße mich wie dein Pet: Laute, Haltung, Pfötchen. Danach {min} Minuten Sitz ohne Bewegung.
+HC-271|hc_pet|4|10|60|0|0|1|||SUB,SWITCH,SOLO|A|Fütterung|Lass dich von deiner Partnerperson mit kleinen Snacks aus der Hand füttern. Nur Pet-Laute. Zehn Minuten.
+HC-272|hc_pet|4|8|55|1|0|0|||SUB,SWITCH,SOLO|A|Trick lernen|Lerne einen neuen Trick deiner Pet-Rolle und führe ihn fünfmal fehlerfrei vor.
+HC-273|hc_pet|4|15|55|1|0|0|||SUB,SWITCH,SOLO|A|Ohne Worte|{min} Minuten nur Pet-Laute und Gesten, dazu Sitz-und-Bleib-Wechsel jede Minute.
+HC-274|hc_pet|5|15|70|1|0|1|||SUB,SWITCH,SOLO|B|Dressurstunde|Deine Partnerperson trainiert dich fünfzehn Minuten mit Kommandos aus eurer Liste. Lob gibt es nur für perfekte Ausführung.
+HC-275|hc_pet|5|10|65|1|0|0|||SUB,SWITCH,SOLO|B|Pet-Prüfung|Sitz, Platz, Pfötchen, Apportieren mit weichem Spielzeug, Napf. Alles hintereinander. Ein Fehler, und du hast nicht bestanden.
+HC-276|hc_pet|5|8|65|1|0|0|||SUB,SWITCH,SOLO|A|Pony-Dressur|Pony: dreimal zwei Minuten hohe Schritte, dazwischen eine Minute Stand. Danach Wasser.
+HC-277|hc_pet|6|30|75|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Albtraum-Zwinger|{min} Minuten Pet-Modus komplett: nur Laute, Halsband, Kommandos alle zwei Minuten. Wasser trinkst du aus dem Napf. Pausen jederzeit.
+HC-278|hc_pet|6|15|80|1|0|1|||SUB,SWITCH,SOLO|B|Show-Pet|Führe deiner Partnerperson eine Pet-Show vor: drei Tricks, Parcours, Begrüßungsritual. Sie bewertet streng.
+HC-279|hc_pet|3|10|50|0|0|1|||DOM,SWITCH|A|Pet erziehen|Du trainierst dein Pet zehn Minuten mit Kommandos aus eurer Liste. Belohne gute Ausführung, achte auf Knie und Handgelenke.
+HC-280|hc_pet|2|2|35|0|0|0|||SUB,SWITCH,SOLO|A|Pet-Name|Sag laut deinen Pet-Namen und deine Rolle. Dann zehn Pet-Laute, jeder anders.
+HC-281|hc_pet|1|3|25|1|0|0|||SUB,SWITCH,SOLO|A|Streicheleinheit|Lass dich zwei Minuten wie ein Pet am Kopf kraulen – von deiner Partnerperson oder einer weichen Decke. Nur Pet-Laute.
+HC-282|hc_pet|5|45|65|1|0|0|||SUB,SWITCH,SOLO|A|Kein Mensch mehr|Für {min} Minuten gibt es keine Worte, keine Hände am Tisch, kein aufrechtes Sitzen auf Stühlen. Du bleibst Pet. Bequemlichkeit für Gelenke geht vor.
+HC-283|hc_ds|5|20|65|1|0|0|||SUB,SWITCH,SOLO|A|Stille Hingabe|Wartehaltung, Blick gesenkt, absolutes Schweigen. Alle fünf Minuten meldest du dich mit einem einzigen Satz. Zwanzig Minuten.
+HC-284|hc_ds|6|45|75|0|0|0|||SUB,SWITCH,SOLO|A|Kammer der Regeln|Sprich dein komplettes Regelbuch auf, dann {min} Minuten Totale Kontrolle. Danach Bericht. Ein Regelbruch beendet die Prüfung als nicht bestanden.
+HC-285|hc_humiliation|5|10|70|0|0|1|||SUB,SWITCH,SOLO|A|Geständnis unter vier Augen|Gestehe deiner Partnerperson unter vier Augen drei Dinge, die dir peinlich sind und die in eure Grenzen fallen. Sie darf darüber lachen. Du bedankst dich.
+HC-286|hc_humiliation|6|60|75|0|0|0|||SUB,SWITCH,SOLO|A|Spielzeugprotokoll|Für {min} Minuten bist du nur Spielzeug: dritte Person, Erlaubnis zu sprechen, Dankespflicht, Ecke nach jedem Fehler. Höchstens drei Ecken.
+HC-287|hc_chastity|5|60|70|0|0|1|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Schlüssel bei der Herrschaft|Gib deiner Partnerperson den Schlüssel für {min} Minuten. Notfallschlüssel bleibt bei dir. Bei Beschwerden wird sofort aufgeschlossen.
+HC-288|hc_chastity|6|30|75|0|0|0|Keuschheitszubehör||SUB,SWITCH,SOLO|B|Verschlossene Totalprüfung|Verschlusskontrolle, zehn Minuten Wartehaltung verschlossen, Keuschheitsbericht, danach {min} Minuten Gedankenkeuschheit.
+HC-289|hc_orgasm|6|15|75|1|0|0|||SUB,SWITCH,SOLO|B|Kante auf Abruf|Berühre dich nur, wenn der Countdown eine volle Minute zeigt, jeweils zehn Sekunden. Fünfzehn Minuten. Kein Höhepunkt. Danach Bericht.
+HC-290|hc_orgasm|5|15|65|1|0|0|||SUB,SWITCH,SOLO|B|Erlaubnis im Würfel|Würfle mit einem echten Würfel: Bei einer Sechs darfst du um Erlaubnis bitten. Alles andere bedeutet zwei Kanten und Verzicht.
+HC-291|hc_anal|5|15|65|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Gefüllte Inspektion|{toy} tragen, fünf Minuten Inspektionshaltung, fünf Minuten Wartehaltung, fünf Minuten Regelaufsagen.
+HC-292|hc_anal|6|35|75|1|0|0|Analplugs||SUB,SWITCH,SOLO|C|Doppelte Füllung der Zeit|{toy} fünfzehn Minuten, dann zehn Minuten Pause, dann noch einmal zehn Minuten mit drei Kanten. Kein Höhepunkt.
+HC-293|hc_toy|6|20|80|1|0|1|Dildos||SUB,SWITCH,SOLO|C|Toy-Gericht|Deine Partnerperson wählt aus deiner Galerie und benutzt {toy} zwanzig Minuten nach Ampel. Du sprichst nur mit Anrede.
+HC-294|hc_toy|5|15|65|1|0|0|Dildos||SUB,SWITCH,SOLO|C|Toy und Verbot|{toy} zehn Minuten benutzen, danach {min} Minuten Berührungsverbot. Kein Höhepunkt.
+HC-295|hc_cbt|5|10|70|1|0|1||PENIS|SUB,SWITCH,SOLO|S|Rahmen unter Aufsicht|Deine Partnerperson schaut zu, während du zehn Minuten nach deiner Liste arbeitest. Sie sagt Stopp, du hörst sofort auf.
+HC-296|hc_pussy|5|10|70|1|0|1||VULVA|SUB,SWITCH,SOLO|S|Rahmen unter Aufsicht|Deine Partnerperson schaut zu, während du zehn Minuten nach deiner Liste arbeitest. Sie sagt Stopp, du hörst sofort auf.
+HC-297|hc_nipple|6|15|80|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Klammer-Gericht der Partnerperson|Deine Partnerperson setzt {toy} zweimal für je drei Minuten, dazwischen Reizserie. Ampel nach jeder Runde.
+HC-298|hc_nipple|5|5|65|1|0|0|||SUB,SWITCH,SOLO|C|Reiz und Gehorsam|Leichtes Kneifen im Countdown-Takt, dazu Anredepflicht und gesenkter Blick. Fünf Minuten.
+HC-299|hc_bondage|6|20|80|1|0|1|||SUB,SWITCH,SOLO|C|Gefesselter Dienst|Locker gefesselte Handgelenke vor dem Körper, Augenbinde, und zwanzig Minuten Befehle deiner Partnerperson. Sie bleibt immer im Raum.
+HC-300|hc_bondage|5|60|65|0|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Manschetten-Tag|{toy} an Hand- und Fußgelenken, unverbunden, für {min} Minuten zu Hause, dazu Anredepflicht.
+HC-301|hc_impact|6|20|75|1|0|0|BDSM-Zubehör||SUB,SWITCH,SOLO|C|Impact-Gericht|Zwanzig Klapse, Ecke fünf Minuten, zwanzig mit {toy}, Ecke fünf Minuten. Haut prüfen. Nicht stärker als mittel.
+HC-302|hc_impact|5|8|65|1|0|0|||SUB,SWITCH,SOLO|C|Bitte um Serie|Vier Serien à fünf Klapse. Vor jeder Serie bittest du mit vollem Satz. Nach jeder Serie Hände an die Wand.
+HC-303|hc_pet|6|15|75|1|0|0|||SUB,SWITCH,SOLO|B|Pet-Albtraum-Parcours|Parcours, Kommando-Kette, Apportieren mit weichem Spielzeug, Napf, Begrüßungsritual. Alles ohne Worte. Pausen für Gelenke erlaubt.
+HC-304|hc_pet|5|10|70|1|0|1|BDSM-Zubehör||SUB,SWITCH,SOLO|B|Pet an der Leine|Halsband und Leine. Deine Partnerperson führt dich zehn Minuten, gibt Kommandos und kontrolliert Haltung. Nur Pet-Laute.

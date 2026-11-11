@@ -58,6 +58,7 @@ class Repo(private val context: Context) {
     val db: AppDatabase get() = AppDatabase.get(context)
     val secure = SecurePrefs(context)
     val rules = RuleBasedEngine()
+    val hc: HardcoreRepo by lazy { HardcoreRepo(this, context) }
     private val seedMutex = Mutex()
     private val _events = MutableSharedFlow<UiEvent>(extraBufferCapacity = 32)
     val events = _events.asSharedFlow()
@@ -84,7 +85,14 @@ class Repo(private val context: Context) {
             f.insertAll(Seed.FETISHES)
             s.insertCounters(Seed.COUNTERS)
             s.insertAchievements(Seed.ACHIEVEMENTS)
+            val firstHardcore = db.hardcoreDao().settingsNow() == null
             if (ai.personasNow().isEmpty()) Seed.PERSONAS.forEach { ai.save(it) }
+            else if (firstHardcore) {
+                // Update von Version 1: neue Hardcore-Personas einmalig ergänzen
+                val names = ai.personasNow().map { it.name }.toSet()
+                Seed.PERSONAS.filter { it.personality in com.lockeddesire.app.ai.HardcoreVoice.PERSONALITIES && it.name !in names }.forEach { ai.save(it) }
+            }
+            hc.seed()
         }
     }
 
@@ -235,7 +243,7 @@ class Repo(private val context: Context) {
             "custom_task" to (t.tasksNow().any { it.custom }),
             "fetish_profile" to (f.prefsNow().count { it.level != "NONE" } >= 5),
             "level_5" to (level >= 5), "level_10" to (level >= 10), "level_20" to (level >= 20), "level_50" to (level >= 50)
-        )
+        ) + hc.achievementFlags()
         var bonus = 0
         all.forEach { a ->
             if (a.id !in have && conditions[a.key] == true) {
@@ -302,8 +310,10 @@ class Repo(private val context: Context) {
     // ---------------- 24-Stunden-Dungeon ----------------
     suspend fun startDungeon(difficulty: Int, categories: Set<String>, totalTasks: Int): Int {
         if (d.activeNow() != null) return 0
-        val ctx = engineContext().copy(maxDifficulty = difficulty)
-        val pool = t.tasksNow().filter { it.enabled && it.dungeonEnabled && it.categoryKey in categories && !it.partnerRequired }.map { it.toProposal() }
+        val base = engineContext()
+        val ctx = base.copy(maxDifficulty = difficulty, allowedCategories = base.allowedCategories + com.lockeddesire.app.engine.Hardcore.KEYS)
+        val pool = t.tasksNow().filter { it.enabled && it.dungeonEnabled && it.categoryKey in categories && !it.partnerRequired }.map { it.toProposal() } +
+            hc.dungeonPool(difficulty)
         val start = now()
         val plan = DungeonPlanner.plan(pool, start, difficulty, totalTasks, ctx, { TimeUtil.minuteOfDay(it) })
         if (plan.isEmpty()) return 0
@@ -320,6 +330,7 @@ class Repo(private val context: Context) {
 
     suspend fun dungeonChallenge(ch: DungeonChallenge, status: String) {
         d.update(ch.copy(status = status))
+        if (ch.categoryKey in com.lockeddesire.app.engine.Hardcore.KEYS) { hc.recordDungeon(ch, status); return }
         recordTask(ch.title, ch.categoryKey, ch.xp, status, "DUNGEON", ch.taskId)
     }
 
@@ -368,6 +379,7 @@ class Repo(private val context: Context) {
     // ---------------- Safeword ----------------
     suspend fun safewordStop() {
         abortDungeon()
+        hc.stopAll()
         ai.expireOffers()
         pauseChastity()
         db.statsDao().save(SessionEntry(kind = "SAFEWORD", title = "Safeword benutzt", note = "Alles gestoppt. Keine Strafe."))
@@ -463,6 +475,7 @@ class Repo(private val context: Context) {
         }
         if (Safety.hasDiscomfort(text)) {
             ai.expireOffers()
+            hc.stopAll()
             val r = Safety.discomfortReply(profile.username); ai.insert(AiMessage(conversationId = conv.id, fromUser = false, text = r)); return r
         }
         if (!cons.aiEnabled) {
@@ -476,6 +489,9 @@ class Repo(private val context: Context) {
             val r = "Notiert. Du kannst alle Erinnerungen jederzeit unter Datenschutz ansehen, ändern und löschen."
             ai.insert(AiMessage(conversationId = conv.id, fromUser = false, text = r)); return r
         }
+        val wantsHardcore = lower.contains("hardcore") ||
+            ((lower.contains("prüfung") || lower.contains("pruefung")) && db.hardcoreDao().settingsNow()?.confirmed == true)
+        if (wantsHardcore) return hc.chatTrial(conv.id)
         val intent = IntentDetector.detect(text)
         val candidate = if (intent == Intent.TASK) pickTask(enforceQuota = true) else null
         val ctx = aiContext(persona)
@@ -603,6 +619,7 @@ class Repo(private val context: Context) {
         o.put("counters", JSONArray().apply { s.countersNow().forEach { put(JSONObject().put("key", it.key).put("name", it.name).put("value", it.value)) } })
         o.put("fitness", JSONArray().apply { s.fitnessNow().forEach { put(JSONObject().put("name", it.name).put("reps", it.reps).put("sec", it.durationSec).put("at", it.createdAt)) } })
         o.put("journal", JSONArray().apply { s.journalNow().forEach { put(JSONObject().put("kind", it.kind).put("title", it.title).put("min", it.durationMin).put("note", it.note).put("at", it.createdAt)) } })
+        o.put("hardcore", JSONArray().apply { db.hardcoreDao().runsNow().forEach { put(JSONObject().put("title", it.title).put("categories", it.categories).put("difficulty", it.difficulty).put("status", it.status).put("xp", it.xp).put("at", it.createdAt).put("end", it.endedAt)) } })
         o.put("memories", JSONArray().apply { ai.memoriesNow().forEach { put(JSONObject().put("kind", it.kind).put("content", it.content)) } })
         o.put("toys", JSONArray().apply { db.toyDao().toysNow().forEach { put(JSONObject().put("name", it.name).put("category", it.category).put("size", it.sizeClass).put("material", it.material).put("measures", it.measures).put("note", it.note).put("favorite", it.favorite)) } })
         val cats = f.categoriesNow().associateBy { it.id }

@@ -66,6 +66,11 @@ fun FetishUniverseScreen() {
                 GhostButton("Roulette", Modifier.weight(1f)) { nav("fetishRoulette") }
             }
         }
+        GothicCard(onClick = { nav("hardcore") }) {
+            Text("⛓ Hardcore-Dungeon", color = LD.Blood, style = MaterialTheme.typography.titleMedium)
+            Text("CBT, Pussy Play, Nipple Play, Anal Play, Toy Play, Chastity, Orgasm Control, Bondage, Impact, Petplay, Humiliation und D/s als Prüfungskategorien aktivieren.")
+            Hint("Was du hier als „Ausgeschlossen“ markierst, sperrt die passende Hardcore-Kategorie automatisch.")
+        }
         cats.groupBy { it.groupName }.forEach { (group, list) ->
             SectionTitle(group)
             list.forEach { c ->
