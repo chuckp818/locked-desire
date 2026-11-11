@@ -207,7 +207,8 @@ private fun MainNav(activity: MainActivity) {
     val pending by activity.pendingRoute
     LaunchedEffect(pending) {
         val r = pending
-        if (r != null && r in ROUTES && r != "dashboard") { nav.navigate(r) { launchSingleTop = true } }
+        if (r == "back") nav.popBackStack()
+        else if (r != null && r != "dashboard" && (r in ROUTES || r.startsWith("personaEdit/") || r.startsWith("toyDetail/"))) nav.navigate(r) { launchSingleTop = true }
         if (r != null) activity.pendingRoute.value = null
     }
     CompositionLocalProvider(LocalNav provides go) {
