@@ -1,0 +1,201 @@
+# kategorie|schwierigkeit|minuten|xp|timer|belastung|gelenke|wdh|partner|tag|titel|beschreibung
+fitness|1|3|10|0|1|1|10||| 10 Liegestütze|Zehn saubere Liegestütze. Auf den Knien ist ausdrücklich erlaubt.
+fitness|2|5|15|0|2|1|20||| 20 Liegestütze|Zwanzig Liegestütze, gern in zwei Sätzen mit kurzer Pause.
+fitness|2|5|15|0|2|1|40||| 40 Kniebeugen|Vierzig Kniebeugen in ruhigem Tempo. Rücken gerade, Fersen am Boden.
+fitness|1|3|10|0|1|1|20||| 20 Kniebeugen|Zwanzig Kniebeugen als Aufwärmrunde.
+fitness|1|3|10|0|1|1|30||| 30 Hampelmänner|Dreißig Hampelmänner, locker und gleichmäßig.
+fitness|2|1|15|1|2|0|0||| 60 Sekunden Plank|Halte den Unterarmstütz eine Minute. Bei Zittern darfst du absetzen.
+fitness|1|1|10|1|1|0|0||| 30 Sekunden Plank|Unterarmstütz für dreißig Sekunden, Bauch fest.
+fitness|1|15|15|1|1|0|0||| 15 Minuten spazieren|Geh eine Viertelstunde an die frische Luft. Kein Handy in der Hand.
+fitness|3|20|30|1|2|1|0||| 2 Kilometer laufen|Lauf zwei Kilometer in deinem Tempo. Gehpausen sind erlaubt.
+fitness|2|5|15|0|2|1|20||| 20 Ausfallschritte|Zehn Ausfallschritte pro Bein, kontrolliert und ohne Schwung.
+fitness|1|10|15|1|1|0|0||| Mobility-Training|Zehn Minuten Mobilität: Schultern kreisen, Hüfte öffnen, Wirbelsäule rollen.
+fitness|3|20|35|1|3|1|0||| Ganzkörpertraining|Zwanzig Minuten Zirkel: Kniebeugen, Liegestütze, Plank, Hampelmänner im Wechsel.
+fitness|1|5|10|1|1|0|0||| Dehnrunde|Fünf Minuten sanftes Dehnen von Nacken, Schultern und Beinen.
+fitness|2|2|15|1|2|1|0||| Wandsitzen|Lehne dich in der Hocke an die Wand und halte neunzig Sekunden.
+fitness|2|4|15|0|2|0|30||| 30 Crunches|Dreißig langsame Crunches, der Nacken bleibt entspannt.
+fitness|2|4|15|0|2|0|20||| 20 Beinheben|Zwanzig Mal im Liegen die gestreckten Beine heben und langsam senken.
+fitness|1|4|10|0|1|0|30||| 30 Wadenheben|Dreißig Mal auf die Zehenspitzen und kontrolliert zurück.
+fitness|3|4|25|0|3|1|15||| 15 Burpees|Fünfzehn Burpees. Ohne Sprung ist als Variante erlaubt.
+fitness|2|3|15|1|2|1|0||| Bergsteiger|Sechzig Sekunden Mountain Climbers in zügigem Tempo, dann ausschütteln.
+fitness|1|10|15|1|1|0|0||| Treppenrunde|Zehn Minuten Treppen steigen, hoch zügig, runter langsam.
+fitness|2|4|15|0|2|0|20||| 20 Superman-Heber|In Bauchlage Arme und Beine anheben, zwei Sekunden halten, zwanzig Mal.
+fitness|2|2|15|1|2|0|0||| Seitstütz|Dreißig Sekunden Seitstütz pro Seite.
+fitness|1|10|15|1|1|0|0||| Sanftes Yoga|Zehn Minuten ruhiger Flow: Katze-Kuh, herabschauender Hund, Kindhaltung.
+fitness|3|30|35|1|2|0|0||| 30 Minuten zügig gehen|Dreißig Minuten strammes Gehen, der Puls darf steigen.
+fitness|2|10|20|1|2|1|0||| Seilspringen ohne Seil|Zehn Minuten im Wechsel: eine Minute hüpfen, eine Minute gehen.
+fitness|2|4|15|0|2|0|20||| 20 Glute Bridges|Zwanzig Mal das Becken aus der Rückenlage heben und oben kurz halten.
+fitness|1|3|10|0|1|0|20||| 20 Armkreise|Zwanzig große Armkreise vorwärts, zwanzig rückwärts.
+fitness|3|6|25|0|3|1|30||| 30 Liegestütze|Dreißig Liegestütze in beliebig vielen Sätzen.
+fitness|2|3|15|1|2|0|0||| Hollow Hold|Dreimal zwanzig Sekunden Hohlkörperspannung mit Pausen dazwischen.
+fitness|1|8|15|1|1|0|0||| Haltungsrunde|Acht Minuten aufrecht stehen und gehen, Schultern zurück, Blick nach vorn.
+selfcontrol|1|10|10|1|0|0|0||patience| Zehn Minuten Stille|Sitz zehn Minuten ruhig da. Kein Handy, kein Bildschirm, nur dein Atem.
+selfcontrol|1|30|15|1|0|0|0||patience| Handy-Pause|Leg dein Handy dreißig Minuten außer Reichweite.
+selfcontrol|2|60|25|1|0|0|0||patience| Eine Stunde ohne Social Media|Eine Stunde lang keine sozialen Netzwerke öffnen.
+selfcontrol|1|5|10|0|0|0|0||discipline| Glas Wasser, sofort|Trink jetzt ein großes Glas Wasser, bevor du irgendetwas anderes tust.
+selfcontrol|1|5|10|0|0|0|0||discipline| Bett machen|Mach dein Bett ordentlich, Ecken glatt, Kissen gerade.
+selfcontrol|2|15|20|1|0|0|0||discipline| Ordnungsdienst|Räum fünfzehn Minuten lang einen Bereich deiner Wahl gründlich auf.
+selfcontrol|1|5|10|0|0|0|0||discipline| Drei Dinge|Schreib drei Dinge auf, die du heute erledigen wirst, und halte dich daran.
+selfcontrol|2|10|15|1|0|0|0||patience| Kalte Hände|Halte deine Hände dreißig Sekunden unter kühles Wasser und atme ruhig weiter.
+selfcontrol|2|20|20|1|0|0|0||patience| Warten lernen|Stell dir etwas Leckeres hin und rühre es zwanzig Minuten nicht an.
+selfcontrol|1|5|10|1|0|0|0||patience| Atem zählen|Zähle hundert Atemzüge, ohne dich zu verzählen. Bei einem Fehler beginnst du neu.
+selfcontrol|3|120|35|1|0|0|0||patience| Zwei Stunden Fokus|Zwei Stunden ohne Naschen und ohne Ablenkungs-Apps.
+selfcontrol|2|10|15|0|0|0|0||discipline| Berichtspflicht|Schreib einen kurzen, ehrlichen Tagesbericht ins Session-Tagebuch.
+selfcontrol|1|3|10|0|0|0|0||discipline| Haltung annehmen|Steh drei Minuten gerade, Hände hinter dem Rücken, Blick geradeaus.
+selfcontrol|2|15|20|1|0|0|0||discipline| Zeilen schreiben|Schreib fünfundzwanzig Mal von Hand: Ich halte mein Wort.
+selfcontrol|3|180|40|1|0|0|0||patience| Drei Stunden Verzicht|Verzichte drei Stunden auf deine liebste Ablenkung, ob Serie, Spiel oder Snack.
+selfcontrol|1|5|10|0|0|0|0||discipline| Pünktlich ins Bett|Leg heute eine feste Schlafenszeit fest und trag sie als Ziel ein.
+selfcontrol|2|10|15|1|0|0|0||patience| Langsam essen|Iss deine nächste Mahlzeit bewusst langsam und leg nach jedem Bissen das Besteck ab.
+selfcontrol|1|5|10|0|0|0|0||discipline| Kleiderordnung|Leg dir die Kleidung für morgen ordentlich zurecht.
+selfcontrol|2|20|20|1|0|0|0||discipline| Lesestunde|Lies zwanzig Minuten in einem Buch. Bildschirme zählen nicht.
+selfcontrol|3|30|30|1|0|0|0||patience| Meditation|Dreißig Minuten Sitzmeditation. Gedanken kommen lassen und ziehen lassen.
+selfcontrol|1|2|10|0|0|0|0||discipline| Um Erlaubnis bitten|Frag deine KI-Persona im Chat höflich um Erlaubnis für deine nächste Pause.
+selfcontrol|2|10|15|0|0|0|0||discipline| Dankesliste|Schreib fünf Dinge auf, für die du heute dankbar bist.
+selfcontrol|2|5|15|1|0|0|0||patience| Still stehen|Fünf Minuten vollkommen still stehen. Nicht kratzen, nicht zappeln.
+selfcontrol|3|60|30|1|0|0|0||patience| Zuckerfrei|Bis zum Ablauf des Timers nichts Süßes.
+selfcontrol|1|5|10|0|0|0|0||discipline| Ziel benennen|Formuliere ein konkretes Ziel für diese Woche und trag es ins Profil ein.
+chastity|1|2|10|0|0|0|0||chastity| Ziel setzen|Leg im Keuschheitstracker ein persönliches Ziel fest, das du wirklich schaffen kannst.
+chastity|1|3|10|0|0|0|0||chastity| Tagesnotiz|Schreib eine ehrliche Notiz zu deinem heutigen Keuschheitstag.
+chastity|2|30|20|1|0|0|0||chastity| Hände weg|Dreißig Minuten lang bleiben deine Hände über der Gürtellinie.
+chastity|2|60|25|1|0|0|0||chastity| Eine Stunde Zurückhaltung|Eine Stunde ohne jede Selbstberührung, auch wenn die Gedanken wandern.
+chastity|3|120|35|1|0|0|0||chastity| Zwei Stunden Geduld|Zwei Stunden bewusst verzichten und dabei ruhig bleiben.
+chastity|1|5|10|0|0|0|0||chastity| Schlüsselritual|Leg deinen Schlüssel oder ein Symbol dafür an einen festen Platz und sag laut dein Ziel.
+chastity|2|5|15|0|0|0|0||chastity| Bitte formulieren|Schreib deiner KI-Persona, warum du dein Ziel erreichen möchtest.
+chastity|1|2|10|0|0|0|0||chastity| Sitz prüfen|Falls du ein Gerät trägst: Prüfe Sitz, Haut und Sauberkeit. Bei Druck oder Schmerz ablegen.
+chastity|2|10|15|1|0|0|0||chastity| Gedanken lenken|Wenn Verlangen aufkommt: zehn Minuten ruhig atmen und es vorbeiziehen lassen.
+chastity|3|180|40|1|0|0|0||chastity| Abendliche Enthaltsamkeit|Drei Stunden am Stück verzichten, bis der Timer endet.
+chastity|1|3|10|0|0|0|0||chastity| Rekord ansehen|Sieh dir deinen bisherigen Rekord an und sag dir, dass du ihn schlagen kannst.
+chastity|2|5|15|0|0|0|0||chastity| Verzicht begründen|Notiere drei Gründe, warum dir Selbstkontrolle gut tut.
+chastity|2|15|20|1|0|0|0||chastity| Kalt abduschen|Beende deine Dusche mit dreißig Sekunden kühlem Wasser statt nachzugeben.
+chastity|1|2|10|0|0|0|0||chastity| Dank für den Tag|Bedank dich bei deiner KI-Persona für einen weiteren geschafften Tag.
+chastity|3|60|30|1|0|0|0||chastity| Versuchung aushalten|Eine Stunde lang an etwas Aufregendes denken dürfen, aber nichts tun.
+chastity|2|5|15|0|0|0|0||chastity| Freiwillige Verlängerung prüfen|Überleg in Ruhe, ob du dein Ziel freiwillig um einen Tag verlängern möchtest. Nein ist eine gute Antwort.
+chastity|1|5|10|0|0|0|0||chastity| Hygiene-Check|Gönn dir eine gründliche Körperpflege. Ein Gerät wird dafür abgelegt und gereinigt.
+chastity|2|20|20|1|0|0|0||chastity| Ablenkungsmarsch|Wenn es schwer wird: zwanzig Minuten rausgehen statt nachgeben.
+chastity|4|180|45|1|0|0|0||chastity| Disziplinierter Abend|Drei Stunden Verzicht und danach eine kurze Meldung im Chat.
+chastity|1|2|10|0|0|0|0||chastity| Kalenderblick|Markiere den heutigen Tag im Kalender als geschafft.
+roleplay|1|3|10|0|0|0|0||ds| Begrüßungsritual|Begrüße deine KI-Persona mit der vereinbarten Anrede und einer kurzen Verbeugung.
+roleplay|1|5|10|0|0|0|0||ds| Anrede üben|Schreib im Chat drei Sätze und verwende in jedem die richtige Anrede.
+roleplay|2|5|15|1|0|1|0||ds| Warteposition|Nimm fünf Minuten eine bequeme Warteposition ein, kniend auf einem Kissen oder sitzend.
+roleplay|2|10|15|0|0|0|0||service| Dienst am Raum|Richte einen Platz so her, als würde gleich hoher Besuch kommen.
+roleplay|2|10|15|0|0|0|0||ds| Regelwerk|Schreib drei Regeln auf, die du dir für dein Rollenspiel wünschst.
+roleplay|1|5|10|0|0|0|0||ds| Bitte und Danke|Bitte im Chat förmlich um deine nächste Aufgabe und bedank dich danach.
+roleplay|3|15|25|1|0|0|0||discipline| Strafzeilen|Schreib dreißig Mal von Hand einen Satz, den deine KI-Persona dir vorgibt.
+roleplay|2|10|15|0|0|0|0||roleplay| Szenenidee|Beschreib in fünf Sätzen eine Rollenspielszene, die dich reizt.
+roleplay|2|5|15|0|0|0|0||ds| Blick gesenkt|Fünf Minuten mit gesenktem Blick still sitzen und an deine Rolle denken.
+roleplay|1|5|10|0|0|0|0||uniform| Dresscode|Zieh etwas an, in dem du dich deiner Rolle näher fühlst.
+roleplay|3|20|30|1|0|0|0||service| Zeremonie|Bereite ein Getränk mit voller Aufmerksamkeit zu und serviere es dir oder deinem Partner förmlich.
+roleplay|2|10|15|0|0|0|0||ds| Vertrag entwerfen|Skizziere einen spielerischen Rollenspielvertrag mit Wünschen, Grenzen und Safeword.
+roleplay|1|3|10|0|0|0|0||ds| Safeword wiederholen|Sag dein Safeword laut und erklär dir selbst, wann du es benutzt.
+roleplay|2|10|15|1|0|0|0||blindfold| Im Dunkeln|Setz dich mit geschlossenen Augen oder Augenbinde zehn Minuten hin und lausche nur.
+roleplay|3|15|25|0|0|0|0||roleplay| Verhörspiel|Beantworte im Chat fünf Fragen deiner KI-Persona absolut ehrlich.
+roleplay|2|5|15|0|0|0|0||spanking| Zählübung|Klatsche dir zehn Mal mit der flachen Hand leicht auf den Oberschenkel und zähle laut mit. Nur so fest, wie es angenehm bleibt.
+roleplay|3|10|25|0|0|0|0||spanking| Zwanzig mit der Hand|Zwanzig leichte bis mittlere Klapse auf den Po mit der flachen Hand. Nur auf das Gesäß, sofort aufhören bei echtem Schmerz.
+roleplay|2|10|15|1|0|0|0||cuffs| Symbolische Fessel|Leg dir zehn Minuten ein lockeres Band oder weiche Manschetten ums Handgelenk, jederzeit selbst lösbar.
+roleplay|4|20|35|1|0|0|0||discipline| Disziplinstunde|Zwanzig Minuten: aufrecht sitzen, Hände auf den Knien, kein Wort, kein Handy.
+roleplay|2|5|15|0|0|0|0||ds| Tagesbefehl|Bitte um einen Tagesbefehl und wiederhole ihn schriftlich Wort für Wort.
+roleplay|3|15|25|0|0|0|0||latex| Glanzpflege|Pflege und poliere ein Kleidungsstück aus Lack, Latex oder Leder sorgfältig.
+roleplay|1|5|10|0|0|0|0||leather| Lederduft|Nimm dir fünf Minuten, um ein Lederstück bewusst zu fühlen und zu riechen.
+roleplay|2|10|15|0|0|0|0||feet| Fußpflege|Gönn deinen Füßen ein warmes Bad und creme sie gründlich ein.
+roleplay|3|10|25|0|0|0|0||medical| Untersuchungsprotokoll|Schreib als Rollenspiel ein fiktives, harmloses Untersuchungsprotokoll über deinen heutigen Zustand.
+roleplay|4|30|40|1|0|0|0||ds| Stiller Dienst|Dreißig Minuten Hausarbeit, schweigend und in deiner Rolle.
+petplay|1|3|10|0|1|1|0||petplay| Auf allen Vieren|Leg eine kurze Strecke auf allen Vieren über einen weichen Teppich zurück.
+petplay|1|3|10|1|0|0|0||petplay| Sitz und bleib|Nimm deine Sitzposition ein und bleib zwei Minuten ruhig.
+petplay|1|2|10|0|0|0|0||petplay| Auf Kommando|Reagiere auf drei vereinbarte Kommandos, die dir der Chat oder dein Partner gibt.
+petplay|2|10|20|1|1|1|0||petplay| Kleiner Parcours|Bau aus Kissen einen sicheren Parcours und absolviere ihn dreimal.
+petplay|1|2|10|1|0|0|0||petplay| Bequeme Pose|Halte eine bequeme Pet-Pose für sechzig Sekunden.
+petplay|1|5|10|0|0|0|0||petplay| Pet-Ritual|Führe dein persönliches Begrüßungsritual als Pet durch.
+petplay|1|5|10|0|0|0|0||petplay| Körbchenzeit|Roll dich fünf Minuten an deinem Lieblingsplatz zusammen und entspann dich.
+petplay|2|5|15|0|0|0|0||petplay| Apportieren|Hol dreimal ein weiches Spielzeug und leg es ordentlich ab. Getragen wird mit den Händen oder Pfoten.
+petplay|1|3|10|0|0|0|0||petplay| Name hören|Sag deinen Pet-Namen dreimal laut und reagiere jedes Mal in deiner Rolle.
+petplay|2|10|15|0|0|0|0||petplay| Fellpflege|Bürste dein Haar oder pflege dein Pet-Zubehör mit viel Ruhe.
+petplay|2|5|15|1|0|0|0||petplay| Platz|Leg dich bequem auf die Seite und bleib fünf Minuten liegen, bis das Kommando endet.
+petplay|1|3|10|0|0|0|0||petplay| Laut geben|Antworte in deiner Rolle dreimal mit dem passenden Laut. Lachen ist erlaubt.
+petplay|2|8|15|0|1|0|0||ponyplay| Pony-Schritt|Übe im Stehen den stolzen Pony-Schritt mit hohen Knien, acht Minuten mit Pausen.
+petplay|1|5|10|0|0|0|0||kittenplay| Kätzchen-Dehnung|Streck dich ausgiebig wie eine Katze, einmal in jede Richtung.
+petplay|1|5|10|0|0|0|0||puppyplay| Schwanzwedeln|Zeig Freude wie ein Puppy: wackeln, hüpfen, strahlen.
+petplay|2|10|15|0|0|0|0||bunnyplay| Hasensprünge|Zehn kleine, federnde Sprünge im Stehen, weich landen.
+petplay|1|5|10|0|0|0|0||foxplay| Fuchsblick|Schleiche lautlos einmal durch die Wohnung, ohne ein Geräusch zu machen.
+petplay|2|10|15|0|0|0|0||petplay| Napfzeit|Richte dir einen Snack in einer Schale schön an und iss ihn bewusst am Tisch.
+petplay|3|15|25|1|0|0|0||petplay| Trainingseinheit|Fünfzehn Minuten Kommandos üben: Sitz, Platz, Bleib, Komm.
+petplay|1|3|10|0|0|0|0||petplay| Belohnung abholen|Bitte in deiner Rolle höflich um eine Belohnung und nimm sie dankbar an.
+sensual|1|10|10|1|0|0|0||sensory| Warme Dusche|Zehn Minuten bewusst duschen und nur auf das Wasser auf der Haut achten.
+sensual|1|5|10|0|0|0|0||sensory| Eincremen|Creme dich langsam und aufmerksam ein, ohne Eile.
+sensual|2|10|15|1|0|0|0||blindfold| Blind fühlen|Ertaste mit geschlossenen Augen fünf Gegenstände und beschreibe sie dir.
+sensual|2|5|15|0|0|0|0||temperature| Warm und kühl|Streich abwechselnd mit einem warmen und einem kühlen Löffel über deinen Unterarm.
+sensual|1|10|10|1|0|0|0||sensory| Musik spüren|Hör ein Lieblingslied mit Kopfhörern und geschlossenen Augen.
+sensual|2|10|15|0|0|0|0||sensory| Federleicht|Fahr mit einer Feder oder einem weichen Tuch langsam über Arme und Nacken.
+sensual|1|5|10|0|0|0|0||sensory| Duftmoment|Such dir einen Duft aus und atme ihn fünf Minuten lang bewusst ein.
+sensual|2|15|20|1|0|0|0||sensory| Kerzenschein|Fünfzehn Minuten nur bei Kerzenlicht sitzen. Kerze sicher abstellen und nicht unbeaufsichtigt lassen.
+sensual|3|10|25|0|0|0|0||wax|Wachstropfen am Arm|Lass aus mindestens 40 cm Höhe einzelne Tropfen einer speziellen Niedrigtemperatur-Massagekerze auf den Unterarm fallen. Vorher an der Hand testen.
+sensual|1|10|10|0|0|0|0||sensory| Stoffprobe|Trag zehn Minuten einen Stoff, der sich besonders anfühlt: Satin, Samt oder Spitze.
+sensual|2|10|15|1|0|0|0||sensory| Selbstmassage|Massiere zehn Minuten Schultern, Nacken und Hände.
+sensual|2|5|15|0|0|0|0||temperature| Eiswürfel|Lass einen Eiswürfel langsam über Handgelenk und Unterarm gleiten.
+sensual|1|5|10|0|0|0|0||sensory| Spiegelmoment|Betrachte dich fünf Minuten wohlwollend im Spiegel und nenn drei Dinge, die du magst.
+sensual|2|20|20|1|0|0|0||sensory| Badezeit|Zwanzig Minuten warmes Bad oder Fußbad, ganz ohne Ablenkung.
+sensual|3|15|25|1|0|0|0||sensory| Langsame Erkundung|Fünfzehn Minuten lang deinen Körper nur mit den Fingerspitzen erkunden, ohne Ziel.
+sensual|2|10|15|0|0|0|0||latex| Zweite Haut|Zieh dein liebstes Fetischkleidungsstück an und spür zehn Minuten, wie es sitzt.
+sensual|1|5|10|0|0|0|0||sensory| Atem und Herz|Leg eine Hand aufs Herz und atme fünf Minuten tief in den Bauch.
+sensual|2|10|15|0|0|0|0||feet| Fußmassage|Massiere jeden Fuß fünf Minuten mit etwas Öl.
+sensual|3|20|25|1|0|0|0||sensory| Sinnesreise|Zwanzig Minuten: erst ein Duft, dann ein Geschmack, dann eine Berührung, dann ein Klang.
+sensual|1|5|10|0|0|0|0||sensory| Wunsch notieren|Schreib eine Fantasie in dein Tagebuch, nur für dich.
+dungeon|1|5|15|0|0|0|0||patience| Das Tor|Lies deine Grenzen im Grenzen-Manager noch einmal durch und bestätige sie.
+dungeon|2|10|20|1|1|1|15||discipline| Prüfung der Kraft|Fünfzehn Kniebeugen, danach eine Minute still stehen.
+dungeon|2|10|20|1|0|0|0||patience| Prüfung der Geduld|Zehn Minuten regungslos sitzen, während ein Timer läuft, den du nicht ansiehst.
+dungeon|3|15|30|1|1|1|10||discipline| Kettenprobe|Dreiteilig: zehn Liegestütze, fünf Minuten Stille, dann ein Bericht im Chat.
+dungeon|3|20|30|1|0|0|0||ds| Der Eid|Schreib einen kurzen Eid an deine KI-Persona und lies ihn laut vor.
+dungeon|2|10|20|0|0|0|0||roleplay| Kerkerbrief|Schreib einen Brief aus Sicht einer Figur, die im Dungeon auf ihre Prüfung wartet.
+dungeon|4|30|40|1|2|1|20||discipline| Dreifache Prüfung|Zwanzig Kniebeugen, eine Minute Plank, zwanzig Minuten Handyverbot.
+dungeon|3|15|30|1|0|0|0||blindfold| Kammer der Dunkelheit|Fünfzehn Minuten mit Augenbinde ruhig sitzen und nur zuhören.
+dungeon|2|5|20|0|0|0|0||ds| Rang und Name|Nenn im Chat deinen Rang, dein Level und was du als Nächstes erreichen willst.
+dungeon|4|25|40|1|1|0|0||patience| Wächterstunde|Fünfundzwanzig Minuten aufrecht stehen oder gehen, ohne dich anzulehnen. Bei Schwindel sofort setzen.
+dungeon|3|10|30|0|0|0|0||discipline| Schriftrolle|Schreib von Hand zehn Regeln deines Dungeons sauber ab.
+dungeon|5|40|50|1|2|1|30||discipline| Meisterprüfung|Dreißig Kniebeugen, dreißig Hampelmänner, zwei Minuten Plank in Etappen, danach zwanzig Minuten Stille.
+dungeon|2|10|20|1|0|0|0||sensory| Kalter Stein|Halte einen kühlen Gegenstand zwei Minuten in jeder Hand und bleib dabei ganz ruhig.
+dungeon|3|20|30|1|0|0|0||patience| Sanduhr|Zwanzig Minuten vor einer Uhr sitzen und nur dem Sekundenzeiger folgen.
+dungeon|4|30|40|1|0|0|0||service| Dienst im Verlies|Dreißig Minuten putzen, in deiner Rolle und ohne Musik.
+dungeon|5|45|50|1|0|0|0||patience| Schweigegelübde|Fünfundvierzig Minuten kein gesprochenes Wort und kein Bildschirm.
+dungeon|6|60|60|1|2|1|40||discipline| Albtraumkette|Vier Stationen: vierzig Kniebeugen in Sätzen, fünfzehn Minuten Stille, dreißig Zeilen schreiben, Abschlussbericht.
+dungeon|3|10|30|0|0|0|0||roleplay| Rätsel des Wächters|Lass dir im Chat ein Rätsel stellen und löse es ohne Hilfe.
+dungeon|4|20|40|1|0|0|0||chastity| Kammer der Versuchung|Zwanzig Minuten an deine größte Versuchung denken und nichts tun.
+dungeon|2|5|20|0|0|0|0||aftercare| Rast am Feuer|Trink etwas Warmes, deck dich zu und atme fünf Minuten durch.
+dungeon|5|30|50|1|1|0|0||discipline| Haltungsprüfung|Dreißig Minuten im Wechsel: fünf Minuten perfekte Haltung, eine Minute lockern.
+dungeon|6|60|60|1|0|0|0||patience| Stunde der Schatten|Eine volle Stunde ohne Handy, Musik oder Snacks in einem abgedunkelten Raum sitzen oder liegen.
+dungeon|3|15|30|0|0|0|0||ds| Tribut|Erledige eine ungeliebte Pflicht aus deinem Alltag als Tribut an deinen Dungeon.
+dungeon|4|15|40|0|0|0|0||roleplay| Geständnis|Gesteh im Chat eine kleine Schwäche und schlag selbst eine faire Übung dagegen vor.
+dungeon|2|5|20|0|0|0|0||aftercare| Schatzkammer|Belohn dich mit etwas Kleinem und notiere, worauf du heute stolz bist.
+surprise|1|5|10|0|0|0|0||| Münzwurf|Wirf eine Münze: Kopf heißt zehn Kniebeugen, Zahl heißt fünf Minuten Stille.
+surprise|1|5|10|0|0|0|0||| Kompliment|Schreib dir selbst ein ehrliches Kompliment ins Tagebuch.
+surprise|2|10|15|0|0|0|0||| Tanzpause|Dreh dein Lieblingslied auf und tanz es komplett durch.
+surprise|1|5|10|0|0|0|0||| Frischluft|Geh ans offene Fenster und atme zwanzig Mal tief durch.
+surprise|2|10|15|0|0|0|0||| Überraschungsgeschenk|Bereite dir oder deinem Partner eine kleine Aufmerksamkeit vor.
+surprise|1|3|10|0|0|0|0||| Würfelglück|Würfle: Die Augenzahl mal fünf ergibt deine Hampelmänner.
+surprise|2|15|20|1|0|0|0||| Neue Runde|Dreh das Aufgabenroulette noch einmal und nimm, was kommt, wenn es zu deinen Grenzen passt.
+surprise|1|5|10|0|0|0|0||| Foto vom Himmel|Geh raus und such dir das schönste Stück Himmel aus.
+surprise|2|10|15|0|0|0|0||| Verkleidung|Zieh etwas an, das du lange nicht getragen hast, und trag es zehn Minuten.
+surprise|3|20|25|1|0|0|0||| Doppelte Portion|Kombiniere die letzten zwei erledigten Aufgaben zu einer neuen.
+surprise|1|5|10|0|0|0|0||| Lieblingslied|Sing ein Lied laut mit, vom ersten bis zum letzten Ton.
+surprise|2|10|15|0|0|0|0||| Geheimer Wunsch|Verrat deiner KI-Persona im Chat einen Wunsch für die nächste Woche.
+surprise|1|2|10|0|0|0|0||| Freilos|Glück gehabt: Diese Runde gibt es XP geschenkt. Lächle einmal in den Spiegel.
+surprise|3|15|25|1|0|0|0||| Rückwärtstag|Erledige fünfzehn Minuten lang alles mit deiner schwächeren Hand.
+surprise|2|10|15|0|0|0|0||| Schatzsuche|Versteck eine kleine Belohnung und hol sie dir erst nach der nächsten Aufgabe.
+partner|1|5|15|0|0|0|0|1|aftercare| Check-in|Fragt euch gegenseitig, wie es euch geht und was ihr euch heute wünscht.
+partner|1|10|15|0|0|0|0|1|ds| Grenzen besprechen|Geht gemeinsam eure Grenzen und das Safeword durch.
+partner|2|10|20|1|0|0|0|1|sensory| Blickkontakt|Schaut euch fünf Minuten schweigend in die Augen.
+partner|2|15|20|1|0|0|0|1|sensory| Massage|Eine Person massiert der anderen fünfzehn Minuten Schultern und Rücken.
+partner|2|10|20|0|0|0|0|1|ds| Rollenwahl|Würfelt aus, wer heute führt, und haltet es zwanzig Minuten durch.
+partner|2|10|20|0|0|0|0|1|service| Bedienung|Eine Person serviert der anderen förmlich ein Getränk.
+partner|3|15|30|1|0|0|0|1|blindfold| Blindes Vertrauen|Eine Person trägt eine Augenbinde, die andere führt sie behutsam durch den Raum.
+partner|3|10|30|0|0|0|0|1|spanking| Zehn mit Ansage|Zehn leichte Klapse auf den Po, laut mitgezählt. Die empfangende Person bestimmt die Stärke.
+partner|2|10|20|0|0|0|0|1|roleplay| Drehbuch|Entwerft gemeinsam in zehn Minuten eine Rollenspielszene.
+partner|3|20|30|1|0|0|0|1|ds| Befehlskette|Zwanzig Minuten lang gibt eine Person einfache, harmlose Anweisungen, die andere führt sie aus.
+partner|2|15|20|1|1|0|0|1|| Gemeinsames Training|Fünfzehn Minuten zusammen trainieren, abwechselnd gibt einer die Übung vor.
+partner|2|10|20|0|0|0|0|1|petplay| Pet und Halter|Zehn Minuten Kommandos üben: Sitz, Platz, Komm, mit viel Lob.
+partner|3|15|30|1|0|0|0|1|cuffs| Sanft gebunden|Weiche Manschetten locker anlegen, fünfzehn Minuten, mit ständigem Kontakt. Zwei Finger müssen darunter passen.
+partner|2|10|20|0|0|0|0|1|feet| Fußbad zu zweit|Eine Person wäscht und massiert der anderen die Füße.
+partner|3|10|30|0|0|0|0|1|temperature| Heiß und kalt|Abwechselnd warme Hände und ein Eiswürfel auf Rücken und Armen der anderen Person.
+partner|4|30|40|1|0|0|0|1|ds| Abend in Rollen|Dreißig Minuten bleibt ihr konsequent in euren vereinbarten Rollen.
+partner|2|10|20|0|0|0|0|1|aftercare| Aftercare-Runde|Decke, Wasser, Kuscheln: zehn Minuten nur füreinander da sein.
+partner|3|15|30|0|0|0|0|1|chastity| Schlüsselübergabe|Besprecht ein gemeinsames Keuschheitsziel. Der Schlüssel bleibt jederzeit erreichbar.
+partner|2|10|20|0|0|0|0|1|sensory| Federspiel|Eine Person streicht die andere zehn Minuten mit einer Feder oder einem Tuch.
+partner|4|20|40|1|0|0|0|1|discipline| Aufgabenlotterie|Jede Person schreibt drei harmlose Aufgaben auf Zettel, gezogen wird abwechselnd.
