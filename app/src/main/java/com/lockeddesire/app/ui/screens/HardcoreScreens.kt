@@ -258,7 +258,8 @@ private fun HardcoreMain(vm: HardcoreViewModel, s: HardcoreSettings) {
     var showSettings by remember { mutableStateOf(false) }
     var spinKey by remember { mutableIntStateOf(0) }
     var target by remember { mutableIntStateOf(0) }
-    var labels by remember { mutableStateOf(Hardcore.CATEGORIES.map { it.name }) }
+    val enabledNames = Hardcore.CATEGORIES.filter { it.key in s.categories.split(",") }.map { it.name }.ifEmpty { listOf("?") }
+    var labels by remember(s.categories) { mutableStateOf(enabledNames) }
     var revealed by remember { mutableStateOf(true) }
     var confirmAbort by remember { mutableStateOf<Long?>(null) }
 
