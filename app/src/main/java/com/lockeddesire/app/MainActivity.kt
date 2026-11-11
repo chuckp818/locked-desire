@@ -48,7 +48,8 @@ class MainActivity : FragmentActivity() {
 
     override fun onStop() {
         super.onStop()
-        if (!isChangingConfigurations && vm.lock.value.pinSet) vm.unlocked.value = false
+        if (vm.externalLaunch) vm.externalLaunch = false
+        else if (!isChangingConfigurations && vm.lock.value.pinSet) vm.unlocked.value = false
         vm.stopSpeaking()
     }
 

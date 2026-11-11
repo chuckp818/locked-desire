@@ -331,8 +331,8 @@ fun TaskEditorScreen() {
         } else {
             GoldButton("＋ Neue Aufgabe", Modifier.fillMaxWidth()) { editing = Task(title = "", description = "", categoryKey = "custom", custom = true, hasTimer = true) }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                GhostButton("Import", Modifier.weight(1f)) { importer.launch(arrayOf("application/json", "text/plain", "*/*")) }
-                GhostButton("Export", Modifier.weight(1f)) { exporter.launch("locked-desire-aufgaben.json") }
+                GhostButton("Import", Modifier.weight(1f)) { vm.externalLaunch = true; importer.launch(arrayOf("application/json", "text/plain", "*/*")) }
+                GhostButton("Export", Modifier.weight(1f)) { vm.externalLaunch = true; exporter.launch("locked-desire-aufgaben.json") }
             }
             LabeledSwitch("Nur eigene Aufgaben exportieren", exportCustomOnly) { exportCustomOnly = it }
             ChoiceChips(listOf("custom" to "Eigene", "all" to "Alle") + Seed.CATEGORIES.filter { it.key != "custom" }.map { it.key to it.emoji }, filter) { filter = it }
@@ -502,7 +502,7 @@ fun PrivacyScreen(activity: MainActivity) {
 
         SectionTitle("Verschlüsselter Export")
         LdField(exportPw, "Passwort für die Exportdatei (mind. 8 Zeichen)") { exportPw = it.take(64) }
-        GoldButton("Daten exportieren", Modifier.fillMaxWidth(), enabled = exportPw.length >= 8) { exporter.launch("locked-desire-${TimeUtil.date(now()).replace('.', '-')}.ldx") }
+        GoldButton("Daten exportieren", Modifier.fillMaxWidth(), enabled = exportPw.length >= 8) { vm.externalLaunch = true; exporter.launch("locked-desire-${TimeUtil.date(now()).replace('.', '-')}.ldx") }
         Hint("AES-256-verschlüsselt. Ohne Passwort ist die Datei nicht lesbar. Fotos werden nicht exportiert.")
 
         SectionTitle("Vollständige Datenlöschung")

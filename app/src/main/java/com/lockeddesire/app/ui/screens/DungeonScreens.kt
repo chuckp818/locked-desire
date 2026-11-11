@@ -285,7 +285,8 @@ fun ChastityScreen() {
         SectionTitle("Rekorde")
         val ended = history.filter { it.status == "ENDED" }
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            com.lockeddesire.app.ui.components.StatTile(TimeUtil.duration(history.maxOfOrNull { vm.repo.chastityElapsed(it, nowMs) } ?: 0).substringBefore(":").let { it }, "Längste Periode", Modifier.weight(1f), "🏅")
+            val best = history.maxOfOrNull { vm.repo.chastityElapsed(it, nowMs) } ?: 0L
+            com.lockeddesire.app.ui.components.StatTile("${best / TimeUtil.DAY}T ${(best % TimeUtil.DAY) / 3_600_000L}h", "Längste Periode", Modifier.weight(1f), "🏅")
             com.lockeddesire.app.ui.components.StatTile(ended.size.toString(), "Perioden", Modifier.weight(1f), "🔒")
         }
         SectionTitle("Kalender")

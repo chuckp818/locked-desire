@@ -30,6 +30,9 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     val ready = MutableStateFlow(false)
     val unlocked = MutableStateFlow(false)
 
+    /** Wird vor Kamera, Fotoauswahl, Dateidialog oder Spracheingabe gesetzt, damit die PIN-Sperre die Rückgabe nicht verwirft. */
+    @Volatile var externalLaunch = false
+
     private fun <T> Flow<T>.state(initial: T): StateFlow<T> = stateIn(viewModelScope, SharingStarted.Eagerly, initial)
 
     val profile = db.profileDao().profile().map { it ?: UserProfile() }.state(UserProfile())

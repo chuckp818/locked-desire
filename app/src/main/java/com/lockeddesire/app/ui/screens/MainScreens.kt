@@ -382,7 +382,7 @@ fun ChatScreen(activity: MainActivity) {
             LdField(input, "Nachricht", Modifier.weight(1f), singleLine = false) { input = it.take(1000) }
             TextButton(onClick = {
                 try {
-                    stt.launch(Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+                    vm.externalLaunch = true; stt.launch(Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
                         putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
                         putExtra(RecognizerIntent.EXTRA_LANGUAGE, "de-DE")
                     })

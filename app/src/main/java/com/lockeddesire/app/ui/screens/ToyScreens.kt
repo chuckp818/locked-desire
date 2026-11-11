@@ -122,11 +122,11 @@ fun ToyDetailScreen(id: Long) {
                     val dir = File(context.cacheDir, "camera").apply { mkdirs() }
                     val f = File(dir, "cap_${now()}.jpg")
                     val u = FileProvider.getUriForFile(context, context.packageName + ".files", f)
-                    camUri = u; camera.launch(u)
+                    camUri = u; vm.externalLaunch = true; camera.launch(u)
                 } catch (_: Exception) { vm.repo.emit("INFO", "Keine Kamera-App gefunden") }
             }
             GhostButton("🖼 Foto wählen", Modifier.weight(1f)) {
-                picker.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+                vm.externalLaunch = true; picker.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
             }
         }
         LdField(t.name, "Name") { t = t.copy(name = it.take(50)) }
