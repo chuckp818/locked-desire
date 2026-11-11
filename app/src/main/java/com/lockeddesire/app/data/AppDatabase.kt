@@ -42,16 +42,19 @@ abstract class AppDatabase : RoomDatabase() {
          * Migrationen: Bei jeder Schemaänderung die Version erhöhen und hier eine
          * Migration(alt, neu) ergänzen. So bleiben Nutzerdaten bei Updates erhalten.
          */
+        /** SQL der Migration 1→2. Ein Unit-Test vergleicht es mit dem von Room exportierten Schema. */
+        val MIGRATION_1_2_SQL = listOf(
+            "CREATE TABLE IF NOT EXISTS `HardcoreTask` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `code` TEXT NOT NULL, `title` TEXT NOT NULL, `categoryKey` TEXT NOT NULL, `description` TEXT NOT NULL, `difficulty` INTEGER NOT NULL, `durationMin` INTEGER NOT NULL, `xp` INTEGER NOT NULL, `physical` INTEGER NOT NULL, `jointLoad` INTEGER NOT NULL, `partnerRequired` INTEGER NOT NULL, `toyCategory` TEXT NOT NULL, `anatomy` TEXT NOT NULL, `roles` TEXT NOT NULL, `requirements` TEXT NOT NULL, `safetyClass` TEXT NOT NULL, `status` TEXT NOT NULL, `custom` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL)",
+            "CREATE UNIQUE INDEX IF NOT EXISTS `index_HardcoreTask_code` ON `HardcoreTask` (`code`)",
+            "CREATE INDEX IF NOT EXISTS `index_HardcoreTask_categoryKey` ON `HardcoreTask` (`categoryKey`)",
+            "CREATE TABLE IF NOT EXISTS `HardcoreRun` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `taskIds` TEXT NOT NULL, `code` TEXT NOT NULL, `title` TEXT NOT NULL, `description` TEXT NOT NULL, `categoryKey` TEXT NOT NULL, `categories` TEXT NOT NULL, `difficulty` INTEGER NOT NULL, `xp` INTEGER NOT NULL, `durationMin` INTEGER NOT NULL, `stepsTotal` INTEGER NOT NULL, `stepsDone` INTEGER NOT NULL, `toyId` INTEGER NOT NULL, `toyName` TEXT NOT NULL, `partner` INTEGER NOT NULL, `personaId` INTEGER NOT NULL, `source` TEXT NOT NULL, `status` TEXT NOT NULL, `verdict` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, `acceptedAt` INTEGER NOT NULL, `startedAt` INTEGER NOT NULL, `endedAt` INTEGER NOT NULL)",
+            "CREATE INDEX IF NOT EXISTS `index_HardcoreRun_status` ON `HardcoreRun` (`status`)",
+            "CREATE INDEX IF NOT EXISTS `index_HardcoreRun_createdAt` ON `HardcoreRun` (`createdAt`)",
+            "CREATE TABLE IF NOT EXISTS `HardcoreSettings` (`id` INTEGER NOT NULL, `confirmed` INTEGER NOT NULL, `difficulty` INTEGER NOT NULL, `categories` TEXT NOT NULL, `personaId` INTEGER NOT NULL, `anatomy` TEXT NOT NULL, `includeIn24h` INTEGER NOT NULL, `notify` INTEGER NOT NULL, `chains` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))"
+        )
+
         val MIGRATION_1_2 = object : Migration(1, 2) {
-            override fun migrate(db: SupportSQLiteDatabase) {
-                db.execSQL("CREATE TABLE IF NOT EXISTS `HardcoreTask` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `code` TEXT NOT NULL, `title` TEXT NOT NULL, `categoryKey` TEXT NOT NULL, `description` TEXT NOT NULL, `difficulty` INTEGER NOT NULL, `durationMin` INTEGER NOT NULL, `xp` INTEGER NOT NULL, `physical` INTEGER NOT NULL, `jointLoad` INTEGER NOT NULL, `partnerRequired` INTEGER NOT NULL, `toyCategory` TEXT NOT NULL, `anatomy` TEXT NOT NULL, `roles` TEXT NOT NULL, `requirements` TEXT NOT NULL, `safetyClass` TEXT NOT NULL, `status` TEXT NOT NULL, `custom` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL)")
-                db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_HardcoreTask_code` ON `HardcoreTask` (`code`)")
-                db.execSQL("CREATE INDEX IF NOT EXISTS `index_HardcoreTask_categoryKey` ON `HardcoreTask` (`categoryKey`)")
-                db.execSQL("CREATE TABLE IF NOT EXISTS `HardcoreRun` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `taskIds` TEXT NOT NULL, `code` TEXT NOT NULL, `title` TEXT NOT NULL, `description` TEXT NOT NULL, `categoryKey` TEXT NOT NULL, `categories` TEXT NOT NULL, `difficulty` INTEGER NOT NULL, `xp` INTEGER NOT NULL, `durationMin` INTEGER NOT NULL, `stepsTotal` INTEGER NOT NULL, `stepsDone` INTEGER NOT NULL, `toyId` INTEGER NOT NULL, `toyName` TEXT NOT NULL, `partner` INTEGER NOT NULL, `personaId` INTEGER NOT NULL, `source` TEXT NOT NULL, `status` TEXT NOT NULL, `verdict` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, `acceptedAt` INTEGER NOT NULL, `startedAt` INTEGER NOT NULL, `endedAt` INTEGER NOT NULL)")
-                db.execSQL("CREATE INDEX IF NOT EXISTS `index_HardcoreRun_status` ON `HardcoreRun` (`status`)")
-                db.execSQL("CREATE INDEX IF NOT EXISTS `index_HardcoreRun_createdAt` ON `HardcoreRun` (`createdAt`)")
-                db.execSQL("CREATE TABLE IF NOT EXISTS `HardcoreSettings` (`id` INTEGER NOT NULL, `confirmed` INTEGER NOT NULL, `difficulty` INTEGER NOT NULL, `categories` TEXT NOT NULL, `personaId` INTEGER NOT NULL, `anatomy` TEXT NOT NULL, `includeIn24h` INTEGER NOT NULL, `notify` INTEGER NOT NULL, `chains` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))")
-            }
+            override fun migrate(db: SupportSQLiteDatabase) { MIGRATION_1_2_SQL.forEach { db.execSQL(it) } }
         }
 
         val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2)

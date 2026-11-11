@@ -144,9 +144,12 @@ fun HardcoreScreen() {
     val nav = LocalNav.current
     val vm: HardcoreViewModel = viewModel()
     val s by vm.settings.collectAsState()
-    Screen("Hardcore-Dungeon", onBack = { nav("back") }, hardcore = true) {
-        if (s.chains) ChainBanner()
-        if (!s.confirmed) HardcoreGate(vm, s) else HardcoreMain(vm, s)
+    // Neuer Scrollzustand, sobald das Tor durchschritten ist
+    androidx.compose.runtime.key(s.confirmed) {
+        Screen("Hardcore", onBack = { nav("back") }, hardcore = true) {
+            if (s.chains) ChainBanner()
+            if (!s.confirmed) HardcoreGate(vm, s) else HardcoreMain(vm, s)
+        }
     }
     val result by vm.result.collectAsState()
     result?.let { r -> ResultOverlay(r, onNew = { vm.result.value = null; vm.newTrial() }, onClose = { vm.result.value = null }, onJournal = { vm.result.value = null; nav("journal") }) }
@@ -192,7 +195,7 @@ private fun DifficultyPips(d: Int) {
 private fun HardcoreGate(vm: HardcoreViewModel, s: HardcoreSettings) {
     var read by remember { mutableStateOf(false) }
     GothicCard(highlight = true) {
-        Text("DER HARDCORE-DUNGEON", style = MaterialTheme.typography.headlineSmall, color = LD.Blood, fontWeight = FontWeight.Bold)
+        Text("DER HARDCORE-DUNGEON", style = MaterialTheme.typography.titleLarge, color = LD.Blood, fontWeight = FontWeight.Bold)
         Text("Hier führt eine strenge Persona. Sie wählt deine Prüfungen, bewertet sie und spart nicht mit Spott. Prüfungen können scheitern.")
         Text("Die Regeln, die nie gebrochen werden:", color = LD.Gold)
         Text("• Jede Prüfung musst du annehmen. Ablehnen und Abbrechen sind immer erlaubt.\n• Nicht bestanden und Abgebrochen geben 0 XP – nie einen Abzug, nie eine Ersatzstrafe.\n• Safeword 🛑 oder Beschwerden stoppen sofort alles.\n• Riskante Kategorien wie CBT oder Pussy Play gibt es nur als Session-Rahmen nach deiner eigenen Liste – keine Schläge auf Genitalien, nichts Einschnürendes, keine extremen Tragezeiten.\n• Echte Fesselung nur mit anwesender Partnerperson.")
