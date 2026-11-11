@@ -25,7 +25,7 @@ class AppFlowTest {
 
     private fun shot(name: String) {
         try {
-            val dir = File(rule.activity.getExternalFilesDir(null), "shots").apply { mkdirs() }
+            val dir = File(rule.activity.filesDir, "shots").apply { mkdirs() }
             val bmp = rule.onRoot().captureToImage().asAndroidBitmap()
             File(dir, name.replace('/', '_') + ".png").outputStream().use { bmp.compress(Bitmap.CompressFormat.PNG, 90, it) }
         } catch (_: Throwable) { }
