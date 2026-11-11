@@ -23,6 +23,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
@@ -51,6 +52,7 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
@@ -61,6 +63,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
@@ -151,7 +154,7 @@ fun GothicBackground(content: @Composable BoxScope.() -> Unit) {
                 }
             }
         }
-        content()
+        CompositionLocalProvider(LocalContentColor provides LD.Grey) { content() }
     }
 }
 
@@ -169,6 +172,7 @@ fun Screen(
     GothicBackground {
         Scaffold(
             containerColor = Color.Transparent,
+            contentColor = LD.Grey,
             topBar = {
                 CenterAlignedTopAppBar(
                     title = { Text(title.uppercase(), style = MaterialTheme.typography.titleLarge, color = LD.Gold, maxLines = 1, overflow = TextOverflow.Ellipsis) },
@@ -184,11 +188,13 @@ fun Screen(
             }
         ) { pad ->
             val base = Modifier.fillMaxSize().padding(pad).imePadding()
-            Column(
-                (if (scroll) base.verticalScroll(rememberScrollState()) else base).padding(horizontal = 16.dp, vertical = 12.dp),
-                verticalArrangement = Arrangement.spacedBy(14.dp),
-                content = content
-            )
+            CompositionLocalProvider(LocalContentColor provides LD.Grey) {
+                Column(
+                    (if (scroll) base.verticalScroll(rememberScrollState()) else base).padding(horizontal = 16.dp, vertical = 12.dp),
+                    verticalArrangement = Arrangement.spacedBy(14.dp),
+                    content = content
+                )
+            }
         }
     }
     if (ask) AlertDialog(
@@ -213,9 +219,8 @@ fun GothicCard(modifier: Modifier = Modifier, onClick: (() -> Unit)? = null, hig
             .border(BorderStroke(1.2.dp, border), shape)
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
             .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        content = content
-    )
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) { CompositionLocalProvider(LocalContentColor provides LD.Grey) { content() } }
 }
 
 @Composable
@@ -239,6 +244,7 @@ fun GoldButton(text: String, modifier: Modifier = Modifier, enabled: Boolean = t
     Button(
         onClick = onClick, enabled = enabled, modifier = modifier.heightIn(min = 50.dp),
         shape = RoundedCornerShape(10.dp),
+        contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp),
         colors = ButtonDefaults.buttonColors(containerColor = LocalAccent.current, contentColor = Color.White),
         border = BorderStroke(1.dp, LD.Gold.copy(alpha = if (enabled) 0.9f else 0.2f))
     ) { Text(text, style = MaterialTheme.typography.labelLarge, textAlign = TextAlign.Center) }
@@ -249,6 +255,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, enabled: Boolean = 
     OutlinedButton(
         onClick = onClick, enabled = enabled, modifier = modifier.heightIn(min = 50.dp),
         shape = RoundedCornerShape(10.dp), border = BorderStroke(1.dp, LD.Gold.copy(alpha = 0.6f)),
+        contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp),
         colors = ButtonDefaults.outlinedButtonColors(contentColor = LD.Grey)
     ) { Text(text, style = MaterialTheme.typography.labelLarge, textAlign = TextAlign.Center) }
 }
@@ -284,8 +291,9 @@ fun LabeledSlider(label: String, value: Int, range: IntRange, valueText: String 
             Text(valueText, color = LD.Gold, fontWeight = FontWeight.Bold)
         }
         Slider(
-            value = value.toFloat(), onValueChange = { onChange(it.toInt().coerceIn(range.first, range.last)) },
-            valueRange = range.first.toFloat()..range.last.toFloat(), steps = (range.last - range.first - 1).coerceAtLeast(0)
+            value = value.toFloat(), onValueChange = { onChange(Math.round(it).coerceIn(range.first, range.last)) },
+            valueRange = range.first.toFloat()..range.last.toFloat(),
+            steps = if (range.last - range.first > 12) 0 else (range.last - range.first - 1).coerceAtLeast(0)
         )
     }
 }
@@ -367,20 +375,23 @@ fun RouletteWheel(labels: List<String>, spinKey: Int, target: Int, modifier: Mod
             val r = size.minDimension / 2f
             val center = Offset(size.width / 2f, size.height / 2f)
             val sweep = 360f / n
-            paint.textSize = (r * 0.11f).coerceIn(18f, 44f)
+            val arc = (2f * Math.PI.toFloat() * r * 0.62f) / n
+            paint.textSize = minOf(r * 0.085f, arc * 0.5f).coerceAtLeast(14f)
+            val maxWidth = r * 0.66f
             for (i in 0 until n) {
                 val start = -90f + rotation.value + i * sweep
                 val color = when (i % 3) { 0 -> LD.DarkRed; 1 -> LD.Bordeaux; else -> LD.Violet }
                 drawArc(color, start, sweep, true, Offset(center.x - r, center.y - r), Size(r * 2, r * 2))
                 drawArc(LD.Gold.copy(alpha = 0.8f), start, sweep, true, Offset(center.x - r, center.y - r), Size(r * 2, r * 2), style = Stroke(2f))
-                val mid = Math.toRadians((start + sweep / 2f).toDouble())
-                val tx = center.x + cos(mid).toFloat() * r * 0.62f
-                val ty = center.y + sin(mid).toFloat() * r * 0.62f
+                var label = labels.getOrElse(i) { "" }
+                if (paint.measureText(label) > maxWidth) {
+                    while (label.length > 2 && paint.measureText("$label…") > maxWidth) label = label.dropLast(1)
+                    label = label.trimEnd() + "…"
+                }
                 val c = drawContext.canvas.nativeCanvas
                 c.save()
-                c.rotate(start + sweep / 2f + 90f, tx, ty)
-                val label = labels.getOrElse(i) { "" }
-                c.drawText(if (label.length > 11) label.take(10) + "…" else label, tx, ty + paint.textSize / 3f, paint)
+                c.rotate(start + sweep / 2f, center.x, center.y)
+                c.drawText(label, center.x + r * 0.58f, center.y + paint.textSize / 3f, paint)
                 c.restore()
             }
             drawCircle(LD.Gold, r, center, style = Stroke(6f))
