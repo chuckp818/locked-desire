@@ -29,7 +29,7 @@ class MainActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Inhalte nicht in Screenshots und in der App-Übersicht zeigen
-        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
+        if (!underInstrumentation()) window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         pendingRoute.value = intent?.getStringExtra("route")
         setContent {
             val prefs by vm.prefs.collectAsState()
@@ -52,6 +52,10 @@ class MainActivity : FragmentActivity() {
         else if (!isChangingConfigurations && vm.lock.value.pinSet) vm.unlocked.value = false
         vm.stopSpeaking()
     }
+
+    /** Nur in automatisierten UI-Tests wahr; dort werden Screenshots für die Prüfung benötigt. */
+    private fun underInstrumentation(): Boolean =
+        try { Class.forName("androidx.test.platform.app.InstrumentationRegistry"); true } catch (_: Throwable) { false }
 
     fun askNotificationPermission() {
         if (Build.VERSION.SDK_INT >= 33) notifPermission.launch(Manifest.permission.POST_NOTIFICATIONS)

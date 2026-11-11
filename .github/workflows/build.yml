@@ -51,6 +51,8 @@ jobs:
 
   ui-test:
     needs: build
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -78,3 +80,13 @@ jobs:
           script: |
             adb logcat -c || true
             gradle --no-daemon connectedDebugAndroidTest || (adb logcat -d -s AndroidRuntime:E TestRunner:* | tail -150; exit 1)
+            mkdir -p shots && adb pull /sdcard/Android/data/com.lockeddesire.app/files/shots shots/ || true
+      - name: Screenshots in Branch ablegen
+        if: always()
+        run: |
+          mkdir -p /tmp/s && find shots -name '*.png' -exec cp {} /tmp/s/ \; || true
+          cd /tmp/s && ls | head -50
+          git init -q && git checkout -q -b screenshots
+          git config user.name "ci" && git config user.email "ci@users.noreply.github.com"
+          git add -A && git commit -q -m "Screenshots ${{ github.sha }}" || exit 0
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" screenshots
