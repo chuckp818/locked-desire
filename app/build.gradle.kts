@@ -83,6 +83,7 @@ dependencies {
     implementation("androidx.sqlite:sqlite-ktx:2.4.0")
 
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.json:json:20240303")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test:runner:1.6.2")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")

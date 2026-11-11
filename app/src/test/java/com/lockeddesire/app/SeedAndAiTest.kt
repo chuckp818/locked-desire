@@ -42,7 +42,10 @@ class SeedAndAiTest {
     @Test fun safetyDetection() {
         assertTrue(Safety.hasDiscomfort("Mir tut das Knie weh"))
         assertTrue(Safety.hasDiscomfort("Mir ist schwindelig"))
+        assertTrue(Safety.hasDiscomfort("Stopp, das ist zu viel"))
+        assertTrue(Safety.hasDiscomfort("Das Handgelenk tut mir echt weh"))
         assertFalse(Safety.hasDiscomfort("Ich bin bereit"))
+        assertFalse(Safety.hasDiscomfort("Gib mir eine neue Aufgabe"))
         assertTrue(Safety.hasSafeword("ROT!", "Rot"))
         assertTrue(Safety.hasSafeword("ich sage rot jetzt", "Rot"))
         assertFalse(Safety.hasSafeword("Rotkäppchen", "Rot"))

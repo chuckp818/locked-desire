@@ -43,7 +43,12 @@ object Safety {
         "mir geht es nicht gut", "mir gehts nicht gut", "geht mir schlecht"
     )
 
-    fun hasDiscomfort(text: String): Boolean = DISCOMFORT.any { text.lowercase().contains(it) }
+    private val SPLIT_PAIN = Regex("\\b(tut|tun|tat|taten)\\b.{0,40}\\bweh\\b|\\b(aua|autsch|au weh)\\b|\\bstopp?\\b")
+
+    fun hasDiscomfort(text: String): Boolean {
+        val t = text.lowercase()
+        return DISCOMFORT.any { t.contains(it) } || SPLIT_PAIN.containsMatchIn(t)
+    }
 
     fun hasSafeword(text: String, safeword: String): Boolean {
         if (safeword.isBlank()) return false
