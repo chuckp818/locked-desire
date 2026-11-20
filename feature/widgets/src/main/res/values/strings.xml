@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_quick_note_label">Schnellnotiz</string>
+    <string name="widget_quick_note_description">Neue Notiz mit einem Tipp starten.</string>
+    <string name="widget_voice_label">Spracheingabe</string>
+    <string name="widget_voice_description">Eine Notiz einsprechen.</string>
+    <string name="widget_events_label">Heutige Termine</string>
+    <string name="widget_events_description">Die Termine von heute.</string>
+    <string name="widget_tasks_label">Aufgabenliste</string>
+    <string name="widget_tasks_description">Die wichtigsten offenen Aufgaben.</string>
+    <string name="widget_pinned_note_label">Angeheftete Notiz</string>
+    <string name="widget_pinned_note_description">Deine angeheftete Notiz auf dem Startbildschirm.</string>
+    <string name="widget_focus_label">Fokus-Timer</string>
+    <string name="widget_focus_description">Fokus-Timer mit einem Tipp starten.</string>
+    <string name="widget_overview_label">Tagesübersicht</string>
+    <string name="widget_overview_description">Datum, nächster Termin und wichtigste Aufgaben.</string>
+    <string name="widget_thoughts_label">Gedanken-Parkplatz</string>
+    <string name="widget_thoughts_description">Gedanken schnell parken und die letzten sehen.</string>
+</resources>

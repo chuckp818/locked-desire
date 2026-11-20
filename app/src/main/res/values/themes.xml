@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nur das Fenster vor dem ersten Compose-Bild; das eigentliche Design kommt aus KopfFreiTheme. -->
+    <style name="Theme.KopfFrei" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/kf_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/kf_background</item>
+    </style>
+</resources>

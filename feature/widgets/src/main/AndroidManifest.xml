@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.QuickNoteWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_quick_note_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_quick_note_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.VoiceInputWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_voice_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_voice_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.TodayEventsWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_events_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_events_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.TaskListWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_tasks_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_tasks_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.PinnedNoteWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_pinned_note_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_pinned_note_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.FocusTimerWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_focus_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_focus_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.DayOverviewWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_overview_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_overview_info" />
+        </receiver>
+        <receiver
+            android:name="de.kopffrei.feature.widgets.ThoughtParkingWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_thoughts_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_thoughts_info" />
+        </receiver>
+    </application>
+</manifest>
