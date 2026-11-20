@@ -23,7 +23,11 @@ jobs:
           java-version: 17
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit-Tests ausführen
-        run: ./gradlew :core:common:test testDebugUnitTest --stacktrace
+        shell: bash
+        run: ./gradlew :core:common:test testDebugUnitTest --stacktrace 2>&1 | tee build.log
+      - name: Fehler als Hinweise ausgeben
+        if: failure()
+        run: python3 tools/ci_annotate_errors.py build.log "Unit-Tests"
       - name: Testberichte hochladen
         if: always()
         uses: actions/upload-artifact@v4
@@ -42,7 +46,11 @@ jobs:
           java-version: 17
       - uses: gradle/actions/setup-gradle@v4
       - name: Debug-APK bauen
-        run: ./gradlew :app:assembleDebug --stacktrace
+        shell: bash
+        run: ./gradlew :app:assembleDebug --stacktrace 2>&1 | tee build.log
+      - name: Fehler als Hinweise ausgeben
+        if: failure()
+        run: python3 tools/ci_annotate_errors.py build.log "APK-Build"
       - name: APK hochladen
         uses: actions/upload-artifact@v4
         with:
