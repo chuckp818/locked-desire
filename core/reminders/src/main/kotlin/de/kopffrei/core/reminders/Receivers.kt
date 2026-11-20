@@ -4,14 +4,30 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.EntryPoint
+import dagger.hilt.InstallIn
+import dagger.hilt.android.EntryPointAccessors
+import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
 private const val TAG = "KopfFreiReminders"
+
+/**
+ * Zugang zum [ReminderCoordinator] für die Empfänger. Bewusst ohne @AndroidEntryPoint: Bei
+ * BroadcastReceivern scheitert dort der Aufruf von super.onReceive in Kotlin ("Abstract member cannot
+ * be accessed directly"), weil Hilt die Oberklasse erst nachträglich im Bytecode austauscht.
+ */
+@EntryPoint
+@InstallIn(SingletonComponent::class)
+interface ReminderEntryPoint {
+    fun coordinator(): ReminderCoordinator
+}
+
+private fun Context.reminderCoordinator(): ReminderCoordinator =
+    EntryPointAccessors.fromApplication(applicationContext, ReminderEntryPoint::class.java).coordinator()
 
 /**
  * Führt Datenbank-Arbeit außerhalb des Hauptthreads aus, ohne dass das System den Empfänger vorzeitig
@@ -31,24 +47,18 @@ private fun BroadcastReceiver.runAsync(block: suspend () -> Unit) {
 }
 
 /** Empfängt den Alarm zum Zeitpunkt einer Erinnerung. */
-@AndroidEntryPoint
 class ReminderReceiver : BroadcastReceiver() {
-    @Inject lateinit var coordinator: ReminderCoordinator
-
     override fun onReceive(context: Context, intent: Intent) {
-        super.onReceive(context, intent)
+        val coordinator = context.reminderCoordinator()
         val id = intent.getStringExtra(ReminderIntents.EXTRA_REMINDER_ID) ?: return
         runAsync { coordinator.onAlarm(id) }
     }
 }
 
 /** Empfängt die Knöpfe der Benachrichtigung: Gesehen, Erledigt, Später. */
-@AndroidEntryPoint
 class ReminderActionReceiver : BroadcastReceiver() {
-    @Inject lateinit var coordinator: ReminderCoordinator
-
     override fun onReceive(context: Context, intent: Intent) {
-        super.onReceive(context, intent)
+        val coordinator = context.reminderCoordinator()
         val id = intent.getStringExtra(ReminderIntents.EXTRA_REMINDER_ID) ?: return
         val action = intent.action
         runAsync {
@@ -62,12 +72,9 @@ class ReminderActionReceiver : BroadcastReceiver() {
 }
 
 /** Plant Erinnerungen neu: nach Neustart, App-Update sowie Zeit-/Zeitzonen-/Berechtigungsänderung. */
-@AndroidEntryPoint
 class BootReceiver : BroadcastReceiver() {
-    @Inject lateinit var coordinator: ReminderCoordinator
-
     override fun onReceive(context: Context, intent: Intent) {
-        super.onReceive(context, intent)
+        val coordinator = context.reminderCoordinator()
         if (intent.action !in HANDLED_ACTIONS) return
         runAsync { coordinator.rescheduleAll() }
     }

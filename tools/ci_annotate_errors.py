@@ -10,7 +10,13 @@ import sys
 path, title = sys.argv[1], sys.argv[2]
 lines = open(path, encoding="utf-8", errors="replace").read().splitlines()
 pattern = re.compile(r"^e: |error:|What went wrong|Execution failed|Could not |Unresolved|FAILED|Caused by|> Task .* FAILED|Exception")
-hits = [l.strip() for l in lines if pattern.search(l)]
+def kurz(l):
+    # Kompilerfehler ohne den langen Runner-Pfad ausgeben
+    return re.sub(r"file:///home/runner/work/[^/]+/[^/]+/", "", l.strip())
+
+
+hits = [kurz(l) for l in lines if re.match(r"^e: ", l)]  # Compilerfehler zuerst
+hits += [kurz(l) for l in lines if pattern.search(l) and not re.match(r"^e: ", l)]
 # gleiche Zeilen nur einmal, Reihenfolge behalten
 seen, unique = set(), []
 for h in hits:

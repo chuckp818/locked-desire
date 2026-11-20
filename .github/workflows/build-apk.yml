@@ -24,7 +24,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit-Tests ausführen
         shell: bash
-        run: ./gradlew :core:common:test testDebugUnitTest --stacktrace 2>&1 | tee build.log
+        run: ./gradlew :core:common:test testDebugUnitTest --continue --stacktrace 2>&1 | tee build.log
       - name: Fehler als Hinweise ausgeben
         if: failure()
         run: python3 tools/ci_annotate_errors.py build.log "Unit-Tests"
@@ -47,7 +47,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Debug-APK bauen
         shell: bash
-        run: ./gradlew :app:assembleDebug --stacktrace 2>&1 | tee build.log
+        run: ./gradlew :app:assembleDebug --continue --stacktrace 2>&1 | tee build.log
       - name: Fehler als Hinweise ausgeben
         if: failure()
         run: python3 tools/ci_annotate_errors.py build.log "APK-Build"
